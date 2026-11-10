@@ -1,0 +1,43 @@
+{
+  "design": {
+    "input_kind": "elab",
+    "elab_path": "/path/to/compiled/design.elab++"
+  },
+  "query": {
+    "mode": "trace",
+    "check_scopes": [
+      "top",
+      "top.u_target",
+      "top.u_b",
+      "top.u_a",
+      "top.u_rs"
+    ],
+    "traversal_boundary": "top",
+    "source": {
+      "scope": "top",
+      "signal": "ref_clk"
+    },
+    "target_modules": [
+      "crg",
+      "mid_b",
+      "mid_a",
+      "rs"
+    ],
+    "observe_signals": [
+      {
+        "scope": "top",
+        "names": [
+          "c0",
+          "b0",
+          "a0",
+          "wrong0"
+        ]
+      }
+    ]
+  },
+  "policy": {
+    "traversal": "dependency",
+    "timeout_seconds": 120,
+    "max_paths": 500
+  }
+}

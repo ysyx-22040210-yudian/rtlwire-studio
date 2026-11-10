@@ -1,0 +1,29 @@
+{
+  "design": {
+    "input_kind": "elab",
+    "elab_path": "/path/to/compiled/design.elab++"
+  },
+  "query": {
+    "mode": "reach",
+    "check_scopes": [
+      "top",
+      "top.u_tile",
+      "top.u_tile.AAAA_BBB_C1"
+    ],
+    "traversal_boundary": "top",
+    "sources": [
+      "top.u_tile.stage_0",
+      "top.u_tile.data_out"
+    ],
+    "target_modules": [
+      "rs_pipe"
+    ],
+    "observe_signals": [
+      "top.data_out"
+    ]
+  },
+  "policy": {
+    "traversal": "wire_only",
+    "timeout_seconds": 120
+  }
+}

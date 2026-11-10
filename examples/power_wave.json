@@ -1,0 +1,31 @@
+{
+  "kind": "power_wave",
+  "fsdb_path": "/path/to/design.fsdb",
+  "domains": [
+    {
+      "scope": "tb.chip.u_a",
+      "iso_en": "iso_en",
+      "power_down": "power_down",
+      "rpt_path": "/path/to/domain_1.rpt",
+      "group_keywords": {
+        "clamp_one": "HIGH",
+        "clamp_zero": "LOW",
+        "no_clamp": "FREE"
+      }
+    },
+    {
+      "scope": "tb.chip.u_wrap.u_b",
+      "iso_en": "iso_en",
+      "power_down": "power_down",
+      "rpt_path": "/path/to/domain_2.rpt",
+      "group_keywords": {
+        "clamp_one": "HIGH",
+        "clamp_zero": "LOW",
+        "no_clamp": "FREE"
+      }
+    }
+  ],
+  "padding_ns": 5,
+  "edge_policy": "settled",
+  "grouping_mode": "rpt"
+}

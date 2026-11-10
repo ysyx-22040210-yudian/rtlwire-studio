@@ -1,0 +1,31 @@
+{
+  "kind": "power_wave",
+  "grouping_mode": "rpt",
+  "fsdb_path": "examples/fsdb/group_faults.fsdb",
+  "padding_ns": 5,
+  "edge_policy": "settled",
+  "domains": [
+    {
+      "scope": "tb.chip.u_a",
+      "iso_en": "iso_en",
+      "power_down": "power_down",
+      "rpt_path": "examples/rpt/domain_1.rpt",
+      "group_keywords": {
+        "clamp_one": "KEEP1",
+        "clamp_zero": "KEEP0",
+        "no_clamp": "BYPASS"
+      }
+    },
+    {
+      "scope": "tb.chip.u_wrap.u_b",
+      "iso_en": "iso_en",
+      "power_down": "power_down",
+      "rpt_path": "examples/rpt/domain_2.rpt",
+      "group_keywords": {
+        "clamp_one": "FORCE_HIGH",
+        "clamp_zero": "FORCE_LOW",
+        "no_clamp": "TRANSPARENT"
+      }
+    }
+  ]
+}

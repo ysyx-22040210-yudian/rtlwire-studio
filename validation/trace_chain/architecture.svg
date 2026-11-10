@@ -1,0 +1,445 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="668" viewBox="0 0 1600 668">
+<title>RTLWire | Design architecture</title>
+<rect width="100%" height="100%" fill="#f8f7f2"/>
+<g font-family="Microsoft YaHei UI,WenQuanYi Micro Hei,DejaVu Sans,sans-serif">
+<g data-object=""><title></title>
+<text x="48" y="29" dy="0.35em" font-size="12" text-anchor="start" fill="#b56346" font-weight="600">DESIGN  /  ARCHITECTURE</text>
+</g>
+<g data-object=""><title></title>
+<text x="48" y="53" dy="0.35em" font-size="18" text-anchor="start" fill="#292823" font-weight="600">层次包含与端口连接</text>
+</g>
+<g data-object=""><title></title>
+<text x="1552" y="52" dy="0.35em" font-size="11" text-anchor="end" fill="#827e72" font-weight="400">6 个实例  /  14 条连接</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<rect x="48" y="90" width="1504" height="530" rx="18" fill="#efede5" stroke="#c89982" stroke-width="1.2"/>
+</g>
+<g data-object=""><title></title>
+<rect x="852" y="298.5" width="258" height="169" rx="16" fill="#e8e4da" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="852" y="295.5" width="258" height="169" rx="16" fill="#f0ede5" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_a"><title>module:top.u_a</title>
+<rect x="852" y="293.5" width="258" height="169" rx="14" fill="#ffffff" stroke="#c89982" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_a"><title>module:top.u_a</title>
+<rect x="861" y="302.5" width="240" height="49" rx="9" fill="#f4f7f3" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="490" y="306.0" width="258" height="154" rx="16" fill="#e8e4da" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="490" y="303.0" width="258" height="154" rx="16" fill="#f0ede5" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_b"><title>module:top.u_b</title>
+<rect x="490" y="301.0" width="258" height="154" rx="14" fill="#ffffff" stroke="#c89982" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_b"><title>module:top.u_b</title>
+<rect x="499" y="310.0" width="240" height="49" rx="9" fill="#f4f7f3" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="1214" y="306.0" width="258" height="154" rx="16" fill="#e8e4da" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="1214" y="303.0" width="258" height="154" rx="16" fill="#f0ede5" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_rs"><title>module:top.u_rs</title>
+<rect x="1214" y="301.0" width="258" height="154" rx="14" fill="#ffffff" stroke="#c89982" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_rs"><title>module:top.u_rs</title>
+<rect x="1223" y="310.0" width="240" height="49" rx="9" fill="#f4f7f3" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="128" y="203.0" width="258" height="154" rx="16" fill="#e8e4da" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="128" y="200.0" width="258" height="154" rx="16" fill="#f0ede5" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_target"><title>module:top.u_target</title>
+<rect x="128" y="198.0" width="258" height="154" rx="14" fill="#ffffff" stroke="#c89982" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_target"><title>module:top.u_target</title>
+<rect x="137" y="207.0" width="240" height="49" rx="9" fill="#f4f7f3" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="128" y="409.0" width="258" height="154" rx="16" fill="#e8e4da" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="128" y="406.0" width="258" height="154" rx="16" fill="#f0ede5" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_wrong"><title>module:top.u_wrong</title>
+<rect x="128" y="404.0" width="258" height="154" rx="14" fill="#ffffff" stroke="#c9d4cc" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_wrong"><title>module:top.u_wrong</title>
+<rect x="137" y="413.0" width="240" height="49" rx="9" fill="#f4f7f3" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="wire:1"><title>wire:1</title>
+<polyline points="48,184 822.0,184.0 824.4444444444445,184.22222222222226 826.4444444444446,184.88888888888894 828.0,186.0 829.1111111111111,187.55555555555554 829.7777777777777,189.55555555555554 830.0,192.0 830.0,404.5 830.2222222222223,406.9444444444445 830.8888888888889,408.94444444444446 832.0,410.5 833.5555555555555,411.6111111111111 835.5555555555557,412.2777777777778 838.0,412.5 852,412.5" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:1"><title>wire:1</title>
+<polyline points="48,184 822.0,184.0 824.4444444444445,184.22222222222226 826.4444444444446,184.88888888888894 828.0,186.0 829.1111111111111,187.55555555555554 829.7777777777777,189.55555555555554 830.0,192.0 830.0,404.5 830.2222222222223,406.9444444444445 830.8888888888889,408.94444444444446 832.0,410.5 833.5555555555555,411.6111111111111 835.5555555555557,412.2777777777778 838.0,412.5 852,412.5" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="852,412.5 845.0,409.5 845.0,415.5" fill="#73877e"/>
+</g>
+<g data-object="wire:2"><title>wire:2</title>
+<polyline points="48,184 62.0,184.0 64.44444444444446,184.22222222222226 66.44444444444444,184.88888888888894 68.0,186.0 69.11111111111111,187.55555555555554 69.77777777777777,189.55555555555554 70.0,192.0 70.0,387.0 70.22222222222223,389.4444444444445 70.8888888888889,391.44444444444446 72.0,393.0 73.55555555555556,394.1111111111111 75.55555555555556,394.7777777777778 78.0,395.0 490,395.0" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:2"><title>wire:2</title>
+<polyline points="48,184 62.0,184.0 64.44444444444446,184.22222222222226 66.44444444444444,184.88888888888894 68.0,186.0 69.11111111111111,187.55555555555554 69.77777777777777,189.55555555555554 70.0,192.0 70.0,387.0 70.22222222222223,389.4444444444445 70.8888888888889,391.44444444444446 72.0,393.0 73.55555555555556,394.1111111111111 75.55555555555556,394.7777777777778 78.0,395.0 490,395.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="490,395.0 483.0,392.0 483.0,398.0" fill="#73877e"/>
+</g>
+<g data-object="wire:3"><title>wire:3</title>
+<polyline points="48,184 62.0,184.0 64.44444444444446,184.22222222222226 66.44444444444444,184.88888888888894 68.0,186.0 69.11111111111111,187.55555555555554 69.77777777777777,189.55555555555554 70.0,192.0 70.0,284.0 70.22222222222223,286.44444444444446 70.8888888888889,288.4444444444445 72.0,290.0 73.55555555555556,291.11111111111114 75.55555555555556,291.77777777777777 78.0,292.0 128,292.0" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:3"><title>wire:3</title>
+<polyline points="48,184 62.0,184.0 64.44444444444446,184.22222222222226 66.44444444444444,184.88888888888894 68.0,186.0 69.11111111111111,187.55555555555554 69.77777777777777,189.55555555555554 70.0,192.0 70.0,284.0 70.22222222222223,286.44444444444446 70.8888888888889,288.4444444444445 72.0,290.0 73.55555555555556,291.11111111111114 75.55555555555556,291.77777777777777 78.0,292.0 128,292.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="128,292.0 121.0,289.0 121.0,295.0" fill="#73877e"/>
+</g>
+<g data-object="wire:4"><title>wire:4</title>
+<polyline points="48,184 62.0,184.0 64.44444444444446,184.22222222222226 66.44444444444444,184.88888888888894 68.0,186.0 69.11111111111111,187.55555555555554 69.77777777777777,189.55555555555554 70.0,192.0 70.0,490.0 70.22222222222223,492.4444444444445 70.8888888888889,494.4444444444445 72.0,496.0 73.55555555555556,497.11111111111114 75.55555555555556,497.7777777777778 78.0,498.0 128,498.0" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:4"><title>wire:4</title>
+<polyline points="48,184 62.0,184.0 64.44444444444446,184.22222222222226 66.44444444444444,184.88888888888894 68.0,186.0 69.11111111111111,187.55555555555554 69.77777777777777,189.55555555555554 70.0,192.0 70.0,490.0 70.22222222222223,492.4444444444445 70.8888888888889,494.4444444444445 72.0,496.0 73.55555555555556,497.11111111111114 75.55555555555556,497.7777777777778 78.0,498.0 128,498.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="128,498.0 121.0,495.0 121.0,501.0" fill="#73877e"/>
+</g>
+<g data-object="wire:5"><title>wire:5</title>
+<polyline points="926,387.5 1071,387.5" fill="none" stroke="#38796c" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<polygon points="1071,387.5 1064.0,384.5 1064.0,390.5" fill="#38796c"/>
+</g>
+<g data-object="wire:6"><title>wire:6</title>
+<polyline points="1110,387.5 1128.25,387.5 1129.3958333333335,387.6041666666667 1130.3333333333335,387.9166666666667 1131.0625,388.4375 1131.5833333333335,389.1666666666667 1131.8958333333335,390.1041666666667 1132.0,391.25 1132.0,391.25 1132.1041666666667,392.39583333333337 1132.4166666666667,393.33333333333337 1132.9375,394.0625 1133.6666666666667,394.58333333333337 1134.6041666666667,394.89583333333337 1135.75,395.0 1214,395.0" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:6"><title>wire:6</title>
+<polyline points="1110,387.5 1128.25,387.5 1129.3958333333335,387.6041666666667 1130.3333333333335,387.9166666666667 1131.0625,388.4375 1131.5833333333335,389.1666666666667 1131.8958333333335,390.1041666666667 1132.0,391.25 1132.0,391.25 1132.1041666666667,392.39583333333337 1132.4166666666667,393.33333333333337 1132.9375,394.0625 1133.6666666666667,394.58333333333337 1134.6041666666667,394.89583333333337 1135.75,395.0 1214,395.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1214,395.0 1207.0,392.0 1207.0,398.0" fill="#73877e"/>
+</g>
+<g data-object="wire:6"><title>wire:6</title>
+<rect x="1155.5" y="373.0" width="35" height="22" rx="7" fill="#ffffff" stroke="#e5e2d9" stroke-width="1"/>
+</g>
+<g data-object="wire:6"><title>wire:6</title>
+<text x="1173.0" y="384.0" dy="0.35em" font-size="11" text-anchor="middle" fill="#38796c" font-weight="400">a0</text>
+</g>
+<g data-object="wire:7"><title>wire:7</title>
+<polyline points="905,437.5 980.0,437.5 982.4444444444446,437.27777777777777 984.4444444444446,436.61111111111114 986.0,435.5 987.1111111111111,433.94444444444446 987.7777777777778,431.94444444444446 988.0,429.5 988.0,395.5 988.2222222222223,393.05555555555566 988.888888888889,391.05555555555554 990.0,389.5 991.5555555555555,388.3888888888889 993.5555555555557,387.7222222222222 996.0,387.5 1071,387.5" fill="none" stroke="#38796c" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<polygon points="1071,387.5 1064.0,384.5 1064.0,390.5" fill="#38796c"/>
+</g>
+<g data-object="wire:8"><title>wire:8</title>
+<polyline points="748,395.0 762.0,395.0 764.4444444444446,395.2222222222223 766.4444444444445,395.88888888888897 768.0,397.0 769.1111111111111,398.55555555555554 769.7777777777778,400.55555555555554 770.0,403.0 770.0,429.5 770.2222222222223,431.94444444444446 770.888888888889,433.94444444444446 772.0,435.5 773.5555555555557,436.6111111111111 775.5555555555555,437.27777777777777 778.0,437.5 852,437.5" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:8"><title>wire:8</title>
+<polyline points="748,395.0 762.0,395.0 764.4444444444446,395.2222222222223 766.4444444444445,395.88888888888897 768.0,397.0 769.1111111111111,398.55555555555554 769.7777777777778,400.55555555555554 770.0,403.0 770.0,429.5 770.2222222222223,431.94444444444446 770.888888888889,433.94444444444446 772.0,435.5 773.5555555555557,436.6111111111111 775.5555555555555,437.27777777777777 778.0,437.5 852,437.5" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="852,437.5 845.0,434.5 845.0,440.5" fill="#73877e"/>
+</g>
+<g data-object="wire:8"><title>wire:8</title>
+<rect x="793.5" y="415.5" width="35" height="22" rx="7" fill="#ffffff" stroke="#e5e2d9" stroke-width="1"/>
+</g>
+<g data-object="wire:8"><title>wire:8</title>
+<text x="811.0" y="426.5" dy="0.35em" font-size="11" text-anchor="middle" fill="#38796c" font-weight="400">b0</text>
+</g>
+<g data-object="wire:9"><title>wire:9</title>
+<polyline points="543,420.0 618.0,420.0 620.4444444444446,419.7777777777778 622.4444444444445,419.11111111111114 624.0,418.0 625.1111111111111,416.44444444444446 625.7777777777778,414.44444444444446 626.0,412.0 626.0,403.0 626.2222222222223,400.5555555555556 626.888888888889,398.55555555555566 628.0,397.0 629.5555555555557,395.8888888888889 631.5555555555555,395.22222222222223 634.0,395.0 709,395.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="709,395.0 702.0,392.0 702.0,398.0" fill="#73877e"/>
+</g>
+<g data-object="wire:10"><title>wire:10</title>
+<polyline points="1288,395.0 1335.0,395.0 1337.4444444444448,395.2222222222223 1339.4444444444446,395.88888888888897 1341.0,397.0 1342.111111111111,398.55555555555554 1342.7777777777778,400.55555555555554 1343.0,403.0 1343.0,414.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1343.0,414.0 1346.0,407.0 1340.0,407.0" fill="#73877e"/>
+</g>
+<g data-object="wire:11"><title>wire:11</title>
+<polyline points="386,292.0 400.0,292.0 402.4444444444445,292.22222222222223 404.44444444444446,292.8888888888889 406.0,294.0 407.1111111111111,295.55555555555554 407.7777777777778,297.55555555555554 408.0,300.0 408.0,412.0 408.2222222222223,414.4444444444445 408.88888888888897,416.4444444444445 410.0,418.0 411.55555555555554,419.1111111111111 413.55555555555554,419.77777777777777 416.0,420.0 490,420.0" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:11"><title>wire:11</title>
+<polyline points="386,292.0 400.0,292.0 402.4444444444445,292.22222222222223 404.44444444444446,292.8888888888889 406.0,294.0 407.1111111111111,295.55555555555554 407.7777777777778,297.55555555555554 408.0,300.0 408.0,412.0 408.2222222222223,414.4444444444445 408.88888888888897,416.4444444444445 410.0,418.0 411.55555555555554,419.1111111111111 413.55555555555554,419.77777777777777 416.0,420.0 490,420.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="490,420.0 483.0,417.0 483.0,423.0" fill="#73877e"/>
+</g>
+<g data-object="wire:11"><title>wire:11</title>
+<rect x="431.5" y="398.0" width="35" height="22" rx="7" fill="#ffffff" stroke="#e5e2d9" stroke-width="1"/>
+</g>
+<g data-object="wire:11"><title>wire:11</title>
+<text x="449.0" y="409.0" dy="0.35em" font-size="11" text-anchor="middle" fill="#38796c" font-weight="400">c0</text>
+</g>
+<g data-object="wire:12"><title>wire:12</title>
+<polyline points="209,292.0 347,292.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="347,292.0 340.0,289.0 340.0,295.0" fill="#73877e"/>
+</g>
+<g data-object="wire:13"><title>wire:13</title>
+<polyline points="386,498.0 817.0,498.0 819.4444444444445,497.7777777777778 821.4444444444445,497.1111111111112 823.0,496.0 824.1111111111111,494.44444444444446 824.7777777777778,492.44444444444446 825.0,490.0 825.0,395.5 825.2222222222224,393.05555555555566 825.888888888889,391.05555555555554 827.0,389.5 828.5555555555557,388.3888888888889 830.5555555555555,387.7222222222222 833.0,387.5 852,387.5" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:13"><title>wire:13</title>
+<polyline points="386,498.0 817.0,498.0 819.4444444444445,497.7777777777778 821.4444444444445,497.1111111111112 823.0,496.0 824.1111111111111,494.44444444444446 824.7777777777778,492.44444444444446 825.0,490.0 825.0,395.5 825.2222222222224,393.05555555555566 825.888888888889,391.05555555555554 827.0,389.5 828.5555555555557,388.3888888888889 830.5555555555555,387.7222222222222 833.0,387.5 852,387.5" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="852,387.5 845.0,384.5 845.0,390.5" fill="#73877e"/>
+</g>
+<g data-object="wire:13"><title>wire:13</title>
+<rect x="578.3" y="476.0" width="54.400000000000006" height="22" rx="7" fill="#ffffff" stroke="#e5e2d9" stroke-width="1"/>
+</g>
+<g data-object="wire:13"><title>wire:13</title>
+<text x="605.5" y="487.0" dy="0.35em" font-size="11" text-anchor="middle" fill="#38796c" font-weight="400">wrong0</text>
+</g>
+<g data-object="wire:14"><title>wire:14</title>
+<polyline points="209,498.0 347,498.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="347,498.0 340.0,495.0 340.0,501.0" fill="#73877e"/>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<text x="67" y="116" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">top</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<text x="67" y="139" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  top</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<rect x="1467" y="104" width="68" height="23" rx="10" fill="#ead7c7" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<text x="1501" y="115" dy="0.35em" font-size="10" text-anchor="middle" fill="#b56346" font-weight="600">检查层次</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<text x="1532" y="140" dy="0.35em" font-size="10" text-anchor="end" fill="#827e72" font-weight="400">5 个同级实例</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<polyline points="64,155 1536,155" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_a"><title>module:top.u_a</title>
+<text x="871" y="319.5" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">u_a</text>
+</g>
+<g data-object="module:top.u_a"><title>module:top.u_a</title>
+<text x="871" y="342.5" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  mid_a</text>
+</g>
+<g data-object="module:top.u_a"><title>module:top.u_a</title>
+<rect x="1025" y="307.5" width="68" height="23" rx="10" fill="#ead7c7" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_a"><title>module:top.u_a</title>
+<text x="1059" y="318.5" dy="0.35em" font-size="10" text-anchor="middle" fill="#b56346" font-weight="600">检查层次</text>
+</g>
+<g data-object="module:top.u_a"><title>module:top.u_a</title>
+<text x="871" y="448.5" dy="0.35em" font-size="9" text-anchor="start" fill="#827e72" font-weight="400">归属  top.u_a</text>
+</g>
+<g data-object="module:top.u_a"><title>module:top.u_a</title>
+<polyline points="868,358.5 1094,358.5" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_b"><title>module:top.u_b</title>
+<text x="509" y="327.0" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">u_b</text>
+</g>
+<g data-object="module:top.u_b"><title>module:top.u_b</title>
+<text x="509" y="350.0" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  mid_b</text>
+</g>
+<g data-object="module:top.u_b"><title>module:top.u_b</title>
+<rect x="663" y="315.0" width="68" height="23" rx="10" fill="#ead7c7" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_b"><title>module:top.u_b</title>
+<text x="697" y="326.0" dy="0.35em" font-size="10" text-anchor="middle" fill="#b56346" font-weight="600">检查层次</text>
+</g>
+<g data-object="module:top.u_b"><title>module:top.u_b</title>
+<text x="509" y="441.0" dy="0.35em" font-size="9" text-anchor="start" fill="#827e72" font-weight="400">归属  top.u_b</text>
+</g>
+<g data-object="module:top.u_b"><title>module:top.u_b</title>
+<polyline points="506,366.0 732,366.0" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_rs"><title>module:top.u_rs</title>
+<text x="1233" y="327.0" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">u_rs</text>
+</g>
+<g data-object="module:top.u_rs"><title>module:top.u_rs</title>
+<text x="1233" y="350.0" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  rs</text>
+</g>
+<g data-object="module:top.u_rs"><title>module:top.u_rs</title>
+<rect x="1387" y="315.0" width="68" height="23" rx="10" fill="#ead7c7" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_rs"><title>module:top.u_rs</title>
+<text x="1421" y="326.0" dy="0.35em" font-size="10" text-anchor="middle" fill="#b56346" font-weight="600">检查层次</text>
+</g>
+<g data-object="module:top.u_rs"><title>module:top.u_rs</title>
+<text x="1233" y="441.0" dy="0.35em" font-size="9" text-anchor="start" fill="#827e72" font-weight="400">归属  top.u_rs</text>
+</g>
+<g data-object="module:top.u_rs"><title>module:top.u_rs</title>
+<polyline points="1230,366.0 1456,366.0" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_target"><title>module:top.u_target</title>
+<text x="147" y="224.0" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">u_target</text>
+</g>
+<g data-object="module:top.u_target"><title>module:top.u_target</title>
+<text x="147" y="247.0" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  crg</text>
+</g>
+<g data-object="module:top.u_target"><title>module:top.u_target</title>
+<rect x="301" y="212.0" width="68" height="23" rx="10" fill="#ead7c7" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_target"><title>module:top.u_target</title>
+<text x="335" y="223.0" dy="0.35em" font-size="10" text-anchor="middle" fill="#b56346" font-weight="600">检查层次</text>
+</g>
+<g data-object="module:top.u_target"><title>module:top.u_target</title>
+<text x="147" y="338.0" dy="0.35em" font-size="9" text-anchor="start" fill="#827e72" font-weight="400">归属  top.u_target</text>
+</g>
+<g data-object="module:top.u_target"><title>module:top.u_target</title>
+<polyline points="144,263.0 370,263.0" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_wrong"><title>module:top.u_wrong</title>
+<text x="147" y="430.0" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">u_wrong</text>
+</g>
+<g data-object="module:top.u_wrong"><title>module:top.u_wrong</title>
+<text x="147" y="453.0" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  crg</text>
+</g>
+<g data-object="module:top.u_wrong"><title>module:top.u_wrong</title>
+<text x="147" y="544.0" dy="0.35em" font-size="9" text-anchor="start" fill="#827e72" font-weight="400">归属  top</text>
+</g>
+<g data-object="module:top.u_wrong"><title>module:top.u_wrong</title>
+<polyline points="144,469.0 370,469.0" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="port:top.ref_clk"><title>port:top.ref_clk</title>
+<ellipse cx="48.0" cy="184.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#b56346" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.ref_clk"><title>port:top.ref_clk</title>
+<ellipse cx="48.0" cy="184.0" rx="2.0" ry="2.0" fill="#b56346" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.ref_clk"><title>port:top.ref_clk</title>
+<rect x="56" y="174" width="55" height="20" rx="6" fill="#f8eee6" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.ref_clk"><title>port:top.ref_clk</title>
+<text x="60" y="184" dy="0.35em" font-size="11" text-anchor="start" fill="#b56346" font-weight="600">ref_clk</text>
+</g>
+<g data-object="port:top.u_a.clk"><title>port:top.u_a.clk</title>
+<ellipse cx="852.0" cy="412.5" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_a.clk"><title>port:top.u_a.clk</title>
+<ellipse cx="852.0" cy="412.5" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_a.clk"><title>port:top.u_a.clk</title>
+<rect x="860" y="402.5" width="27" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_a.clk"><title>port:top.u_a.clk</title>
+<text x="864" y="412.5" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">clk</text>
+</g>
+<g data-object="port:top.u_b.clk"><title>port:top.u_b.clk</title>
+<ellipse cx="490.0" cy="395.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_b.clk"><title>port:top.u_b.clk</title>
+<ellipse cx="490.0" cy="395.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_b.clk"><title>port:top.u_b.clk</title>
+<rect x="498" y="385.0" width="27" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_b.clk"><title>port:top.u_b.clk</title>
+<text x="502" y="395.0" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">clk</text>
+</g>
+<g data-object="port:top.u_target.source_in"><title>port:top.u_target.source_in</title>
+<ellipse cx="128.0" cy="292.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_target.source_in"><title>port:top.u_target.source_in</title>
+<ellipse cx="128.0" cy="292.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_target.source_in"><title>port:top.u_target.source_in</title>
+<rect x="136" y="282.0" width="69" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_target.source_in"><title>port:top.u_target.source_in</title>
+<text x="140" y="292.0" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">source_in</text>
+</g>
+<g data-object="port:top.u_wrong.source_in"><title>port:top.u_wrong.source_in</title>
+<ellipse cx="128.0" cy="498.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_wrong.source_in"><title>port:top.u_wrong.source_in</title>
+<ellipse cx="128.0" cy="498.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_wrong.source_in"><title>port:top.u_wrong.source_in</title>
+<rect x="136" y="488.0" width="69" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_wrong.source_in"><title>port:top.u_wrong.source_in</title>
+<text x="140" y="498.0" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">source_in</text>
+</g>
+<g data-object="port:top.u_target.out"><title>port:top.u_target.out</title>
+<ellipse cx="386.0" cy="292.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_target.out"><title>port:top.u_target.out</title>
+<ellipse cx="386.0" cy="292.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_target.out"><title>port:top.u_target.out</title>
+<rect x="351" y="282.0" width="27" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_target.out"><title>port:top.u_target.out</title>
+<text x="374" y="292.0" dy="0.35em" font-size="11" text-anchor="end" fill="#38796c" font-weight="400">out</text>
+</g>
+<g data-object="port:top.u_wrong.out"><title>port:top.u_wrong.out</title>
+<ellipse cx="386.0" cy="498.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_wrong.out"><title>port:top.u_wrong.out</title>
+<ellipse cx="386.0" cy="498.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_wrong.out"><title>port:top.u_wrong.out</title>
+<rect x="351" y="488.0" width="27" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_wrong.out"><title>port:top.u_wrong.out</title>
+<text x="374" y="498.0" dy="0.35em" font-size="11" text-anchor="end" fill="#38796c" font-weight="400">out</text>
+</g>
+<g data-object="port:top.u_b.src_i"><title>port:top.u_b.src_i</title>
+<ellipse cx="490.0" cy="420.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_b.src_i"><title>port:top.u_b.src_i</title>
+<ellipse cx="490.0" cy="420.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_b.src_i"><title>port:top.u_b.src_i</title>
+<rect x="498" y="410.0" width="41" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_b.src_i"><title>port:top.u_b.src_i</title>
+<text x="502" y="420.0" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">src_i</text>
+</g>
+<g data-object="port:top.u_a.branch_i"><title>port:top.u_a.branch_i</title>
+<ellipse cx="852.0" cy="387.5" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_a.branch_i"><title>port:top.u_a.branch_i</title>
+<ellipse cx="852.0" cy="387.5" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_a.branch_i"><title>port:top.u_a.branch_i</title>
+<rect x="860" y="377.5" width="62" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_a.branch_i"><title>port:top.u_a.branch_i</title>
+<text x="864" y="387.5" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">branch_i</text>
+</g>
+<g data-object="port:top.u_b.out"><title>port:top.u_b.out</title>
+<ellipse cx="748.0" cy="395.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_b.out"><title>port:top.u_b.out</title>
+<ellipse cx="748.0" cy="395.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_b.out"><title>port:top.u_b.out</title>
+<rect x="713" y="385.0" width="27" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_b.out"><title>port:top.u_b.out</title>
+<text x="736" y="395.0" dy="0.35em" font-size="11" text-anchor="end" fill="#38796c" font-weight="400">out</text>
+</g>
+<g data-object="port:top.u_a.out"><title>port:top.u_a.out</title>
+<ellipse cx="1110.0" cy="387.5" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_a.out"><title>port:top.u_a.out</title>
+<ellipse cx="1110.0" cy="387.5" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_a.out"><title>port:top.u_a.out</title>
+<rect x="1075" y="377.5" width="27" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_a.out"><title>port:top.u_a.out</title>
+<text x="1098" y="387.5" dy="0.35em" font-size="11" text-anchor="end" fill="#38796c" font-weight="400">out</text>
+</g>
+<g data-object="port:top.u_a.src_i"><title>port:top.u_a.src_i</title>
+<ellipse cx="852.0" cy="437.5" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_a.src_i"><title>port:top.u_a.src_i</title>
+<ellipse cx="852.0" cy="437.5" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_a.src_i"><title>port:top.u_a.src_i</title>
+<rect x="860" y="427.5" width="41" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_a.src_i"><title>port:top.u_a.src_i</title>
+<text x="864" y="437.5" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">src_i</text>
+</g>
+<g data-object="port:top.u_rs.pipe_clk"><title>port:top.u_rs.pipe_clk</title>
+<ellipse cx="1214.0" cy="395.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_rs.pipe_clk"><title>port:top.u_rs.pipe_clk</title>
+<ellipse cx="1214.0" cy="395.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_rs.pipe_clk"><title>port:top.u_rs.pipe_clk</title>
+<rect x="1222" y="385.0" width="62" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_rs.pipe_clk"><title>port:top.u_rs.pipe_clk</title>
+<text x="1226" y="395.0" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">pipe_clk</text>
+</g>
+<g data-object="stop:top.u_rs.rs:Always0#Always0:4:4:Reg.CKR_pipe_clk"><title>stop:top.u_rs.rs:Always0#Always0:4:4:Reg.CKR_pipe_clk</title>
+<rect x="1232.0" y="415.0" width="222" height="21" rx="8" fill="#f5ecd9" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="stop:top.u_rs.rs:Always0#Always0:4:4:Reg.CKR_pipe_clk"><title>stop:top.u_rs.rs:Always0#Always0:4:4:Reg.CKR_pipe_clk</title>
+<text x="1343.0" y="425.0" dy="0.35em" font-size="10" text-anchor="middle" fill="#a27935" font-weight="400">时序边界 · 停止</text>
+</g>
+</g></svg>

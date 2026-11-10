@@ -1,0 +1,6 @@
+#!/bin/sh
+# Run on the Linux desktop after loading the site's normal EDA environment.
+set -eu
+RTLWIRE_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+cd "$RTLWIRE_ROOT"
+exec "${RTLWIRE_PYTHON:-python3}" -m rtlwire.gui "$@"

@@ -1,0 +1,1791 @@
+{
+  "kind": "power_wave",
+  "version": 2,
+  "config": {
+    "kind": "power_wave",
+    "grouping_mode": "rpt",
+    "fsdb_path": "examples/fsdb/group_pass.fsdb",
+    "padding_ns": 5,
+    "edge_policy": "settled",
+    "domains": [
+      {
+        "scope": "tb.chip.u_a",
+        "iso_en": "iso_en",
+        "power_down": "power_down",
+        "rpt_path": "examples/rpt/domain_1.rpt",
+        "group_keywords": {
+          "clamp_one": "KEEP1",
+          "clamp_zero": "KEEP0",
+          "no_clamp": "BYPASS"
+        }
+      },
+      {
+        "scope": "tb.chip.u_wrap.u_b",
+        "iso_en": "iso_en",
+        "power_down": "power_down",
+        "rpt_path": "examples/rpt/domain_2.rpt",
+        "group_keywords": {
+          "clamp_one": "FORCE_HIGH",
+          "clamp_zero": "FORCE_LOW",
+          "no_clamp": "TRANSPARENT"
+        }
+      }
+    ]
+  },
+  "file": {
+    "scale": "1ps",
+    "begin": 0,
+    "end": 110000,
+    "sequence_numbers": false
+  },
+  "domains": [
+    {
+      "config": {
+        "scope": "tb.chip.u_a",
+        "iso_en": "tb.chip.u_a.iso_en",
+        "power_down": "tb.chip.u_a.power_down",
+        "rpt_path": "examples/rpt/domain_1.rpt",
+        "group_keywords": {
+          "clamp_one": "KEEP1",
+          "clamp_zero": "KEEP0",
+          "no_clamp": "BYPASS"
+        }
+      },
+      "outputs": [
+        "tb.chip.u_a.free_bus",
+        "tb.chip.u_a.free_out",
+        "tb.chip.u_a.mixed_bus",
+        "tb.chip.u_a.one_bus",
+        "tb.chip.u_a.one_out",
+        "tb.chip.u_a.zero_bus",
+        "tb.chip.u_a.zero_out"
+      ],
+      "cycles": [
+        {
+          "start": 20000,
+          "iso_rise": 20000,
+          "power_fall": 35000,
+          "power_rise": 70000,
+          "iso_fall": 90000,
+          "issues": [],
+          "end": 90000,
+          "complete": true,
+          "index": 1,
+          "scope": "tb.chip.u_a",
+          "window": [
+            15000,
+            95000
+          ],
+          "padding_clipped": false,
+          "checks": [
+            {
+              "signal": "tb.chip.u_a.free_bus",
+              "local_name": "free_bus",
+              "width": 4,
+              "idle": "0010",
+              "clamp": "1000",
+              "checks": {
+                "idle_equal": {
+                  "status": "SKIP",
+                  "time": 20000,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不检查 idle 与钳位值",
+                  "checked_bits": []
+                },
+                "clamp_expected": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                },
+                "clamp_stable": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "xxxx",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "no_clamp",
+              "expected_clamp": "----",
+              "group_names": [
+                "ALPHA_BYPASS"
+              ],
+              "rpt_members": [
+                {
+                  "group": "ALPHA_BYPASS",
+                  "policy": "no_clamp",
+                  "member": "free_bus",
+                  "line": 6,
+                  "bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_a.free_out",
+              "local_name": "free_out",
+              "width": 1,
+              "idle": "0",
+              "clamp": "1",
+              "checks": {
+                "idle_equal": {
+                  "status": "SKIP",
+                  "time": 20000,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不检查 idle 与钳位值",
+                  "checked_bits": []
+                },
+                "clamp_expected": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                },
+                "clamp_stable": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "x",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "no_clamp",
+              "expected_clamp": "-",
+              "group_names": [
+                "ALPHA_BYPASS"
+              ],
+              "rpt_members": [
+                {
+                  "group": "ALPHA_BYPASS",
+                  "policy": "no_clamp",
+                  "member": "free_out",
+                  "line": 6,
+                  "bits": [
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_a.mixed_bus",
+              "local_name": "mixed_bus",
+              "width": 4,
+              "idle": "1000",
+              "clamp": "1011",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 20000,
+                  "actual": "10",
+                  "expected": "10",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "10",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "10",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "xxxx",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "10",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "mixed",
+              "expected_clamp": "10--",
+              "group_names": [
+                "ALPHA_KEEP1",
+                "ALPHA_KEEP0",
+                "ALPHA_BYPASS"
+              ],
+              "rpt_members": [
+                {
+                  "group": "ALPHA_KEEP1",
+                  "policy": "clamp_one",
+                  "member": "mixed_bus[3]",
+                  "line": 2,
+                  "bits": [
+                    3
+                  ]
+                },
+                {
+                  "group": "ALPHA_KEEP0",
+                  "policy": "clamp_zero",
+                  "member": "mixed_bus[2]",
+                  "line": 3,
+                  "bits": [
+                    2
+                  ]
+                },
+                {
+                  "group": "ALPHA_BYPASS",
+                  "policy": "no_clamp",
+                  "member": "mixed_bus[1:0]",
+                  "line": 6,
+                  "bits": [
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_a.one_bus",
+              "local_name": "one_bus",
+              "width": 4,
+              "idle": "1111",
+              "clamp": "1111",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 20000,
+                  "actual": "1111",
+                  "expected": "1111",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1111",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1111",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "xxxx",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1111",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "clamp_one",
+              "expected_clamp": "1111",
+              "group_names": [
+                "ALPHA_KEEP1"
+              ],
+              "rpt_members": [
+                {
+                  "group": "ALPHA_KEEP1",
+                  "policy": "clamp_one",
+                  "member": "one_bus",
+                  "line": 2,
+                  "bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_a.one_out",
+              "local_name": "one_out",
+              "width": 1,
+              "idle": "1",
+              "clamp": "1",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 20000,
+                  "actual": "1",
+                  "expected": "1",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "x",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "clamp_one",
+              "expected_clamp": "1",
+              "group_names": [
+                "ALPHA_KEEP1"
+              ],
+              "rpt_members": [
+                {
+                  "group": "ALPHA_KEEP1",
+                  "policy": "clamp_one",
+                  "member": "one_out",
+                  "line": 2,
+                  "bits": [
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_a.zero_bus",
+              "local_name": "zero_bus",
+              "width": 4,
+              "idle": "0000",
+              "clamp": "0000",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 20000,
+                  "actual": "0000",
+                  "expected": "0000",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0000",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0000",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "xxxx",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0000",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "clamp_zero",
+              "expected_clamp": "0000",
+              "group_names": [
+                "ALPHA_KEEP0"
+              ],
+              "rpt_members": [
+                {
+                  "group": "ALPHA_KEEP0",
+                  "policy": "clamp_zero",
+                  "member": "zero_bus[3:0]",
+                  "line": 3,
+                  "bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_a.zero_out",
+              "local_name": "zero_out",
+              "width": 1,
+              "idle": "0",
+              "clamp": "0",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 20000,
+                  "actual": "0",
+                  "expected": "0",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "x",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "clamp_zero",
+              "expected_clamp": "0",
+              "group_names": [
+                "ALPHA_KEEP0"
+              ],
+              "rpt_members": [
+                {
+                  "group": "ALPHA_KEEP0",
+                  "policy": "clamp_zero",
+                  "member": "zero_out",
+                  "line": 3,
+                  "bits": [
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            }
+          ],
+          "delta_warnings": [
+            {
+              "signal": "tb.chip.u_a.one_bus",
+              "time": 25000,
+              "values": [
+                "0000",
+                "1111"
+              ]
+            }
+          ],
+          "status": "PASS"
+        }
+      ],
+      "issues": [],
+      "status": "PASS",
+      "rpt": {
+        "source": "examples/rpt/domain_1.rpt",
+        "keywords": {
+          "clamp_one": "KEEP1",
+          "clamp_zero": "KEEP0",
+          "no_clamp": "BYPASS"
+        },
+        "groups": [
+          {
+            "name": "ALPHA_KEEP1",
+            "policy": "clamp_one",
+            "members": [
+              "one_out",
+              "one_bus",
+              "mixed_bus[3]"
+            ],
+            "line": 2
+          },
+          {
+            "name": "ALPHA_KEEP0",
+            "policy": "clamp_zero",
+            "members": [
+              "zero_out",
+              "zero_bus[3:0]",
+              "mixed_bus[2]"
+            ],
+            "line": 3
+          },
+          {
+            "name": "ALPHA_BYPASS",
+            "policy": "no_clamp",
+            "members": [
+              "free_out",
+              "free_bus",
+              "mixed_bus[1:0]"
+            ],
+            "line": 6
+          }
+        ],
+        "counts": {
+          "clamp_one": 3,
+          "clamp_zero": 3,
+          "no_clamp": 3
+        },
+        "sha256": "f15beea41f2affb09d4cd3eb90a8cc00a35a808b6a6bab8673e3200f3cb54f5a",
+        "size_bytes": 205
+      },
+      "group_counts": {
+        "clamp_one": 2,
+        "clamp_zero": 2,
+        "no_clamp": 2,
+        "mixed": 1,
+        "unassigned": 0
+      },
+      "output_groups": {
+        "tb.chip.u_a.free_bus": {
+          "policy_bits": "----",
+          "clamp_policy": "no_clamp",
+          "groups": [
+            "ALPHA_BYPASS"
+          ],
+          "members": [
+            {
+              "group": "ALPHA_BYPASS",
+              "policy": "no_clamp",
+              "member": "free_bus",
+              "line": 6,
+              "bits": [
+                3,
+                2,
+                1,
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_a.free_out": {
+          "policy_bits": "-",
+          "clamp_policy": "no_clamp",
+          "groups": [
+            "ALPHA_BYPASS"
+          ],
+          "members": [
+            {
+              "group": "ALPHA_BYPASS",
+              "policy": "no_clamp",
+              "member": "free_out",
+              "line": 6,
+              "bits": [
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_a.mixed_bus": {
+          "policy_bits": "10--",
+          "clamp_policy": "mixed",
+          "groups": [
+            "ALPHA_KEEP1",
+            "ALPHA_KEEP0",
+            "ALPHA_BYPASS"
+          ],
+          "members": [
+            {
+              "group": "ALPHA_KEEP1",
+              "policy": "clamp_one",
+              "member": "mixed_bus[3]",
+              "line": 2,
+              "bits": [
+                3
+              ]
+            },
+            {
+              "group": "ALPHA_KEEP0",
+              "policy": "clamp_zero",
+              "member": "mixed_bus[2]",
+              "line": 3,
+              "bits": [
+                2
+              ]
+            },
+            {
+              "group": "ALPHA_BYPASS",
+              "policy": "no_clamp",
+              "member": "mixed_bus[1:0]",
+              "line": 6,
+              "bits": [
+                1,
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_a.one_bus": {
+          "policy_bits": "1111",
+          "clamp_policy": "clamp_one",
+          "groups": [
+            "ALPHA_KEEP1"
+          ],
+          "members": [
+            {
+              "group": "ALPHA_KEEP1",
+              "policy": "clamp_one",
+              "member": "one_bus",
+              "line": 2,
+              "bits": [
+                3,
+                2,
+                1,
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_a.one_out": {
+          "policy_bits": "1",
+          "clamp_policy": "clamp_one",
+          "groups": [
+            "ALPHA_KEEP1"
+          ],
+          "members": [
+            {
+              "group": "ALPHA_KEEP1",
+              "policy": "clamp_one",
+              "member": "one_out",
+              "line": 2,
+              "bits": [
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_a.zero_bus": {
+          "policy_bits": "0000",
+          "clamp_policy": "clamp_zero",
+          "groups": [
+            "ALPHA_KEEP0"
+          ],
+          "members": [
+            {
+              "group": "ALPHA_KEEP0",
+              "policy": "clamp_zero",
+              "member": "zero_bus[3:0]",
+              "line": 3,
+              "bits": [
+                3,
+                2,
+                1,
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_a.zero_out": {
+          "policy_bits": "0",
+          "clamp_policy": "clamp_zero",
+          "groups": [
+            "ALPHA_KEEP0"
+          ],
+          "members": [
+            {
+              "group": "ALPHA_KEEP0",
+              "policy": "clamp_zero",
+              "member": "zero_out",
+              "line": 3,
+              "bits": [
+                0
+              ]
+            }
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "config": {
+        "scope": "tb.chip.u_wrap.u_b",
+        "iso_en": "tb.chip.u_wrap.u_b.iso_en",
+        "power_down": "tb.chip.u_wrap.u_b.power_down",
+        "rpt_path": "examples/rpt/domain_2.rpt",
+        "group_keywords": {
+          "clamp_one": "FORCE_HIGH",
+          "clamp_zero": "FORCE_LOW",
+          "no_clamp": "TRANSPARENT"
+        }
+      },
+      "outputs": [
+        "tb.chip.u_wrap.u_b.free_bus",
+        "tb.chip.u_wrap.u_b.free_out",
+        "tb.chip.u_wrap.u_b.mixed_bus",
+        "tb.chip.u_wrap.u_b.one_bus",
+        "tb.chip.u_wrap.u_b.one_out",
+        "tb.chip.u_wrap.u_b.zero_bus",
+        "tb.chip.u_wrap.u_b.zero_out"
+      ],
+      "cycles": [
+        {
+          "start": 30000,
+          "iso_rise": 30000,
+          "power_fall": 45000,
+          "power_rise": 75000,
+          "iso_fall": 100000,
+          "issues": [],
+          "end": 100000,
+          "complete": true,
+          "index": 1,
+          "scope": "tb.chip.u_wrap.u_b",
+          "window": [
+            25000,
+            105000
+          ],
+          "padding_clipped": false,
+          "checks": [
+            {
+              "signal": "tb.chip.u_wrap.u_b.free_bus",
+              "local_name": "free_bus",
+              "width": 4,
+              "idle": "0010",
+              "clamp": "1000",
+              "checks": {
+                "idle_equal": {
+                  "status": "SKIP",
+                  "time": 30000,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不检查 idle 与钳位值",
+                  "checked_bits": []
+                },
+                "clamp_expected": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                },
+                "clamp_stable": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "xxxx",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "no_clamp",
+              "expected_clamp": "----",
+              "group_names": [
+                "BETA_TRANSPARENT"
+              ],
+              "rpt_members": [
+                {
+                  "group": "BETA_TRANSPARENT",
+                  "policy": "no_clamp",
+                  "member": "free_bus",
+                  "line": 6,
+                  "bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_wrap.u_b.free_out",
+              "local_name": "free_out",
+              "width": 1,
+              "idle": "0",
+              "clamp": "1",
+              "checks": {
+                "idle_equal": {
+                  "status": "SKIP",
+                  "time": 30000,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不检查 idle 与钳位值",
+                  "checked_bits": []
+                },
+                "clamp_expected": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                },
+                "clamp_stable": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "x",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "SKIP",
+                  "time": null,
+                  "actual": null,
+                  "expected": null,
+                  "message": "不钳位组不执行此项检查",
+                  "checked_bits": []
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "no_clamp",
+              "expected_clamp": "-",
+              "group_names": [
+                "BETA_TRANSPARENT"
+              ],
+              "rpt_members": [
+                {
+                  "group": "BETA_TRANSPARENT",
+                  "policy": "no_clamp",
+                  "member": "free_out",
+                  "line": 6,
+                  "bits": [
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_wrap.u_b.mixed_bus",
+              "local_name": "mixed_bus",
+              "width": 4,
+              "idle": "1000",
+              "clamp": "1011",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 30000,
+                  "actual": "10",
+                  "expected": "10",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "10",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "10",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "xxxx",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "10",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "mixed",
+              "expected_clamp": "10--",
+              "group_names": [
+                "BETA_FORCE_HIGH",
+                "BETA_FORCE_LOW",
+                "BETA_TRANSPARENT"
+              ],
+              "rpt_members": [
+                {
+                  "group": "BETA_FORCE_HIGH",
+                  "policy": "clamp_one",
+                  "member": "mixed_bus[3]",
+                  "line": 2,
+                  "bits": [
+                    3
+                  ]
+                },
+                {
+                  "group": "BETA_FORCE_LOW",
+                  "policy": "clamp_zero",
+                  "member": "mixed_bus[2]",
+                  "line": 3,
+                  "bits": [
+                    2
+                  ]
+                },
+                {
+                  "group": "BETA_TRANSPARENT",
+                  "policy": "no_clamp",
+                  "member": "mixed_bus[1:0]",
+                  "line": 6,
+                  "bits": [
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_wrap.u_b.one_bus",
+              "local_name": "one_bus",
+              "width": 4,
+              "idle": "1111",
+              "clamp": "1111",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 30000,
+                  "actual": "1111",
+                  "expected": "1111",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1111",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1111",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "xxxx",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1111",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "clamp_one",
+              "expected_clamp": "1111",
+              "group_names": [
+                "BETA_FORCE_HIGH"
+              ],
+              "rpt_members": [
+                {
+                  "group": "BETA_FORCE_HIGH",
+                  "policy": "clamp_one",
+                  "member": "one_bus",
+                  "line": 2,
+                  "bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_wrap.u_b.one_out",
+              "local_name": "one_out",
+              "width": 1,
+              "idle": "1",
+              "clamp": "1",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 30000,
+                  "actual": "1",
+                  "expected": "1",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "x",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "1",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "clamp_one",
+              "expected_clamp": "1",
+              "group_names": [
+                "BETA_FORCE_HIGH"
+              ],
+              "rpt_members": [
+                {
+                  "group": "BETA_FORCE_HIGH",
+                  "policy": "clamp_one",
+                  "member": "one_out",
+                  "line": 2,
+                  "bits": [
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_wrap.u_b.zero_bus",
+              "local_name": "zero_bus",
+              "width": 4,
+              "idle": "0000",
+              "clamp": "0000",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 30000,
+                  "actual": "0000",
+                  "expected": "0000",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0000",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0000",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "xxxx",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0000",
+                  "message": "",
+                  "checked_bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "clamp_zero",
+              "expected_clamp": "0000",
+              "group_names": [
+                "BETA_FORCE_LOW"
+              ],
+              "rpt_members": [
+                {
+                  "group": "BETA_FORCE_LOW",
+                  "policy": "clamp_zero",
+                  "member": "zero_bus[3:0]",
+                  "line": 3,
+                  "bits": [
+                    3,
+                    2,
+                    1,
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            },
+            {
+              "signal": "tb.chip.u_wrap.u_b.zero_out",
+              "local_name": "zero_out",
+              "width": 1,
+              "idle": "0",
+              "clamp": "0",
+              "checks": {
+                "idle_equal": {
+                  "status": "PASS",
+                  "time": 30000,
+                  "actual": "0",
+                  "expected": "0",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "clamp_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "clamp_stable": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "off_x": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "x",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                },
+                "recovery_expected": {
+                  "status": "PASS",
+                  "time": null,
+                  "actual": null,
+                  "expected": "0",
+                  "message": "",
+                  "checked_bits": [
+                    0
+                  ]
+                }
+              },
+              "status": "PASS",
+              "clamp_policy": "clamp_zero",
+              "expected_clamp": "0",
+              "group_names": [
+                "BETA_FORCE_LOW"
+              ],
+              "rpt_members": [
+                {
+                  "group": "BETA_FORCE_LOW",
+                  "policy": "clamp_zero",
+                  "member": "zero_out",
+                  "line": 3,
+                  "bits": [
+                    0
+                  ]
+                }
+              ],
+              "group_issues": []
+            }
+          ],
+          "delta_warnings": [],
+          "status": "PASS"
+        }
+      ],
+      "issues": [],
+      "status": "PASS",
+      "rpt": {
+        "source": "examples/rpt/domain_2.rpt",
+        "keywords": {
+          "clamp_one": "FORCE_HIGH",
+          "clamp_zero": "FORCE_LOW",
+          "no_clamp": "TRANSPARENT"
+        },
+        "groups": [
+          {
+            "name": "BETA_FORCE_HIGH",
+            "policy": "clamp_one",
+            "members": [
+              "one_out",
+              "one_bus",
+              "mixed_bus[3]"
+            ],
+            "line": 2
+          },
+          {
+            "name": "BETA_FORCE_LOW",
+            "policy": "clamp_zero",
+            "members": [
+              "zero_out",
+              "zero_bus[3:0]",
+              "mixed_bus[2]"
+            ],
+            "line": 3
+          },
+          {
+            "name": "BETA_TRANSPARENT",
+            "policy": "no_clamp",
+            "members": [
+              "free_out",
+              "free_bus",
+              "mixed_bus[1:0]"
+            ],
+            "line": 6
+          }
+        ],
+        "counts": {
+          "clamp_one": 3,
+          "clamp_zero": 3,
+          "no_clamp": 3
+        },
+        "sha256": "0b63629dc9761354fcea473b4183f67a1b96b2d647f4241fabe99a80a9a74433",
+        "size_bytes": 216
+      },
+      "group_counts": {
+        "clamp_one": 2,
+        "clamp_zero": 2,
+        "no_clamp": 2,
+        "mixed": 1,
+        "unassigned": 0
+      },
+      "output_groups": {
+        "tb.chip.u_wrap.u_b.free_bus": {
+          "policy_bits": "----",
+          "clamp_policy": "no_clamp",
+          "groups": [
+            "BETA_TRANSPARENT"
+          ],
+          "members": [
+            {
+              "group": "BETA_TRANSPARENT",
+              "policy": "no_clamp",
+              "member": "free_bus",
+              "line": 6,
+              "bits": [
+                3,
+                2,
+                1,
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_wrap.u_b.free_out": {
+          "policy_bits": "-",
+          "clamp_policy": "no_clamp",
+          "groups": [
+            "BETA_TRANSPARENT"
+          ],
+          "members": [
+            {
+              "group": "BETA_TRANSPARENT",
+              "policy": "no_clamp",
+              "member": "free_out",
+              "line": 6,
+              "bits": [
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_wrap.u_b.mixed_bus": {
+          "policy_bits": "10--",
+          "clamp_policy": "mixed",
+          "groups": [
+            "BETA_FORCE_HIGH",
+            "BETA_FORCE_LOW",
+            "BETA_TRANSPARENT"
+          ],
+          "members": [
+            {
+              "group": "BETA_FORCE_HIGH",
+              "policy": "clamp_one",
+              "member": "mixed_bus[3]",
+              "line": 2,
+              "bits": [
+                3
+              ]
+            },
+            {
+              "group": "BETA_FORCE_LOW",
+              "policy": "clamp_zero",
+              "member": "mixed_bus[2]",
+              "line": 3,
+              "bits": [
+                2
+              ]
+            },
+            {
+              "group": "BETA_TRANSPARENT",
+              "policy": "no_clamp",
+              "member": "mixed_bus[1:0]",
+              "line": 6,
+              "bits": [
+                1,
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_wrap.u_b.one_bus": {
+          "policy_bits": "1111",
+          "clamp_policy": "clamp_one",
+          "groups": [
+            "BETA_FORCE_HIGH"
+          ],
+          "members": [
+            {
+              "group": "BETA_FORCE_HIGH",
+              "policy": "clamp_one",
+              "member": "one_bus",
+              "line": 2,
+              "bits": [
+                3,
+                2,
+                1,
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_wrap.u_b.one_out": {
+          "policy_bits": "1",
+          "clamp_policy": "clamp_one",
+          "groups": [
+            "BETA_FORCE_HIGH"
+          ],
+          "members": [
+            {
+              "group": "BETA_FORCE_HIGH",
+              "policy": "clamp_one",
+              "member": "one_out",
+              "line": 2,
+              "bits": [
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_wrap.u_b.zero_bus": {
+          "policy_bits": "0000",
+          "clamp_policy": "clamp_zero",
+          "groups": [
+            "BETA_FORCE_LOW"
+          ],
+          "members": [
+            {
+              "group": "BETA_FORCE_LOW",
+              "policy": "clamp_zero",
+              "member": "zero_bus[3:0]",
+              "line": 3,
+              "bits": [
+                3,
+                2,
+                1,
+                0
+              ]
+            }
+          ],
+          "issues": []
+        },
+        "tb.chip.u_wrap.u_b.zero_out": {
+          "policy_bits": "0",
+          "clamp_policy": "clamp_zero",
+          "groups": [
+            "BETA_FORCE_LOW"
+          ],
+          "members": [
+            {
+              "group": "BETA_FORCE_LOW",
+              "policy": "clamp_zero",
+              "member": "zero_out",
+              "line": 3,
+              "bits": [
+                0
+              ]
+            }
+          ],
+          "issues": []
+        }
+      }
+    }
+  ],
+  "policy": {
+    "edge": "settled",
+    "idle": "strictly_before_iso_rise",
+    "intervals": "[iso_rise,power_fall), [power_fall,power_rise), [power_rise,iso_fall)",
+    "coverage": "Direct output ports declared in the FSDB; omitted ports cannot be inferred.",
+    "delta": "Recorded same-timestamp updates are warnings, not failures.",
+    "grouping": "rpt",
+    "no_clamp": "Skip clamp rules; still require all X during power-off."
+  },
+  "summary": {
+    "status": "PASS",
+    "domains": 2,
+    "outputs": 14,
+    "cycles": 2,
+    "complete_cycles": 2,
+    "output_cycle_checks": 14,
+    "delta_warnings": 1,
+    "pass": 14,
+    "fail": 0,
+    "unknown": 0
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "file": {
+    "scale": "1ps",
+    "begin": 0,
+    "end": 110000,
+    "sequence_numbers": false
+  },
+  "scopes": {
+    "tb.chip.u_a": {
+      "name": "tb.chip.u_a",
+      "module": ""
+    },
+    "tb.chip.u_wrap.u_b": {
+      "name": "tb.chip.u_wrap.u_b",
+      "module": ""
+    }
+  },
+  "signals": {
+    "tb.chip.u_a.free_bus": {
+      "name": "tb.chip.u_a.free_bus",
+      "scope": "tb.chip.u_a",
+      "local_name": "free_bus",
+      "idcode": 8,
+      "direction": 2,
+      "type": 15,
+      "left": 3,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0010"
+        ],
+        [
+          20000,
+          "1000"
+        ],
+        [
+          23000,
+          "0110"
+        ],
+        [
+          28000,
+          "0111"
+        ],
+        [
+          35000,
+          "xxxx"
+        ],
+        [
+          70000,
+          "1001"
+        ],
+        [
+          75000,
+          "0011"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_a.free_out": {
+      "name": "tb.chip.u_a.free_out",
+      "scope": "tb.chip.u_a",
+      "local_name": "free_out",
+      "idcode": 7,
+      "direction": 2,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0"
+        ],
+        [
+          20000,
+          "1"
+        ],
+        [
+          23000,
+          "0"
+        ],
+        [
+          28000,
+          "1"
+        ],
+        [
+          35000,
+          "0"
+        ],
+        [
+          74000,
+          "1"
+        ],
+        [
+          78000,
+          "0"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_a.iso_en": {
+      "name": "tb.chip.u_a.iso_en",
+      "scope": "tb.chip.u_a",
+      "local_name": "iso_en",
+      "idcode": 1,
+      "direction": 1,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0"
+        ],
+        [
+          20000,
+          "1"
+        ],
+        [
+          90000,
+          "0"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_a.mixed_bus": {
+      "name": "tb.chip.u_a.mixed_bus",
+      "scope": "tb.chip.u_a",
+      "local_name": "mixed_bus",
+      "idcode": 9,
+      "direction": 2,
+      "type": 15,
+      "left": 3,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1000"
+        ],
+        [
+          20000,
+          "1011"
+        ],
+        [
+          25000,
+          "1001"
+        ],
+        [
+          35000,
+          "xx0x"
+        ],
+        [
+          70000,
+          "1010"
+        ],
+        [
+          76000,
+          "1011"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_a.not_an_output": {
+      "name": "tb.chip.u_a.not_an_output",
+      "scope": "tb.chip.u_a",
+      "local_name": "not_an_output",
+      "idcode": 10,
+      "direction": 0,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": false,
+      "events": [],
+      "deltas": []
+    },
+    "tb.chip.u_a.one_bus": {
+      "name": "tb.chip.u_a.one_bus",
+      "scope": "tb.chip.u_a",
+      "local_name": "one_bus",
+      "idcode": 4,
+      "direction": 2,
+      "type": 15,
+      "left": 3,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1111"
+        ],
+        [
+          25000,
+          "1101"
+        ],
+        [
+          26000,
+          "1111"
+        ],
+        [
+          35000,
+          "xxxx"
+        ],
+        [
+          70000,
+          "1111"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_a.one_out": {
+      "name": "tb.chip.u_a.one_out",
+      "scope": "tb.chip.u_a",
+      "local_name": "one_out",
+      "idcode": 3,
+      "direction": 2,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1"
+        ],
+        [
+          20000,
+          "0"
+        ],
+        [
+          35000,
+          "x"
+        ],
+        [
+          70000,
+          "1"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_a.power_down": {
+      "name": "tb.chip.u_a.power_down",
+      "scope": "tb.chip.u_a",
+      "local_name": "power_down",
+      "idcode": 2,
+      "direction": 1,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1"
+        ],
+        [
+          35000,
+          "0"
+        ],
+        [
+          70000,
+          "1"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_a.zero_bus": {
+      "name": "tb.chip.u_a.zero_bus",
+      "scope": "tb.chip.u_a",
+      "local_name": "zero_bus",
+      "idcode": 6,
+      "direction": 2,
+      "type": 15,
+      "left": 3,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0000"
+        ],
+        [
+          35000,
+          "xxxx"
+        ],
+        [
+          70000,
+          "0010"
+        ],
+        [
+          90000,
+          "0000"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_a.zero_out": {
+      "name": "tb.chip.u_a.zero_out",
+      "scope": "tb.chip.u_a",
+      "local_name": "zero_out",
+      "idcode": 5,
+      "direction": 2,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1"
+        ],
+        [
+          20000,
+          "0"
+        ],
+        [
+          35000,
+          "x"
+        ],
+        [
+          70000,
+          "0"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.free_bus": {
+      "name": "tb.chip.u_wrap.u_b.free_bus",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "free_bus",
+      "idcode": 18,
+      "direction": 2,
+      "type": 15,
+      "left": 3,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0010"
+        ],
+        [
+          30000,
+          "1000"
+        ],
+        [
+          33000,
+          "0110"
+        ],
+        [
+          38000,
+          "0111"
+        ],
+        [
+          45000,
+          "xxxx"
+        ],
+        [
+          75000,
+          "1001"
+        ],
+        [
+          80000,
+          "0011"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.free_out": {
+      "name": "tb.chip.u_wrap.u_b.free_out",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "free_out",
+      "idcode": 17,
+      "direction": 2,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0"
+        ],
+        [
+          30000,
+          "1"
+        ],
+        [
+          33000,
+          "0"
+        ],
+        [
+          38000,
+          "1"
+        ],
+        [
+          45000,
+          "x"
+        ],
+        [
+          75000,
+          "0"
+        ],
+        [
+          79000,
+          "1"
+        ],
+        [
+          83000,
+          "0"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.iso_en": {
+      "name": "tb.chip.u_wrap.u_b.iso_en",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "iso_en",
+      "idcode": 11,
+      "direction": 1,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0"
+        ],
+        [
+          30000,
+          "1"
+        ],
+        [
+          100000,
+          "0"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.mixed_bus": {
+      "name": "tb.chip.u_wrap.u_b.mixed_bus",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "mixed_bus",
+      "idcode": 19,
+      "direction": 2,
+      "type": 15,
+      "left": 3,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1000"
+        ],
+        [
+          30000,
+          "1011"
+        ],
+        [
+          35000,
+          "1001"
+        ],
+        [
+          45000,
+          "xxxx"
+        ],
+        [
+          75000,
+          "1010"
+        ],
+        [
+          81000,
+          "1011"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.not_an_output": {
+      "name": "tb.chip.u_wrap.u_b.not_an_output",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "not_an_output",
+      "idcode": 20,
+      "direction": 0,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": false,
+      "events": [],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.one_bus": {
+      "name": "tb.chip.u_wrap.u_b.one_bus",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "one_bus",
+      "idcode": 14,
+      "direction": 2,
+      "type": 15,
+      "left": 3,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1111"
+        ],
+        [
+          45000,
+          "xxxx"
+        ],
+        [
+          75000,
+          "1111"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.one_out": {
+      "name": "tb.chip.u_wrap.u_b.one_out",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "one_out",
+      "idcode": 13,
+      "direction": 2,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1"
+        ],
+        [
+          45000,
+          "x"
+        ],
+        [
+          75000,
+          "1"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.power_down": {
+      "name": "tb.chip.u_wrap.u_b.power_down",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "power_down",
+      "idcode": 12,
+      "direction": 1,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "1"
+        ],
+        [
+          45000,
+          "0"
+        ],
+        [
+          75000,
+          "1"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.zero_bus": {
+      "name": "tb.chip.u_wrap.u_b.zero_bus",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "zero_bus",
+      "idcode": 16,
+      "direction": 2,
+      "type": 15,
+      "left": 3,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0000"
+        ],
+        [
+          45000,
+          "xxxx"
+        ],
+        [
+          75000,
+          "0000"
+        ]
+      ],
+      "deltas": []
+    },
+    "tb.chip.u_wrap.u_b.zero_out": {
+      "name": "tb.chip.u_wrap.u_b.zero_out",
+      "scope": "tb.chip.u_wrap.u_b",
+      "local_name": "zero_out",
+      "idcode": 15,
+      "direction": 2,
+      "type": 15,
+      "left": 0,
+      "right": 0,
+      "selected": true,
+      "events": [
+        [
+          0,
+          "0"
+        ],
+        [
+          45000,
+          "x"
+        ],
+        [
+          75000,
+          "0"
+        ]
+      ],
+      "deltas": []
+    }
+  },
+  "dump_off": [],
+  "complete": true,
+  "counts": {
+    "signals": 18,
+    "events": 82
+  }
+}

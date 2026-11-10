@@ -1,0 +1,38 @@
+{
+  "design": {
+    "input_kind": "elab",
+    "elab_path": "/path/to/compiled/design.elab++"
+  },
+  "query": {
+    "mode": "trace",
+    "traversal_boundary": "top",
+    "check_scopes": [
+      "top",
+      "top.u_block",
+      "top.u_block.u_core"
+    ],
+    "sources": [
+      "top.req"
+    ],
+    "target_modules": [
+      "stage_a",
+      "stage_b"
+    ],
+    "observe_signals": [
+      "top.req",
+      "top.link",
+      "top.u_block.req_i",
+      "top.u_block.req_o"
+    ]
+  },
+  "policy": {
+    "traversal": "dependency",
+    "max_nodes": 100000,
+    "max_edges": 300000,
+    "max_depth": 256,
+    "max_signal_bits": 4096,
+    "max_paths": 500,
+    "max_path_depth": 512,
+    "timeout_seconds": 120
+  }
+}

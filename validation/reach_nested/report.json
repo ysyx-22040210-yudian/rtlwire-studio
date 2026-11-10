@@ -1,0 +1,241 @@
+{
+  "mode": "reach",
+  "complete": true,
+  "candidate_count": 3,
+  "completeness_scope": "Within traversal_boundary and traversal policy; stops at sequential cells. Not functional equivalence.",
+  "candidates": [
+    {
+      "name": "top.u_tile.AAAA_BBB_C0",
+      "parent": "top.u_tile",
+      "module": "rs_pipe",
+      "cell": "npiNlModuleCell",
+      "owner_scope": "top.u_tile.AAAA_BBB_C0"
+    },
+    {
+      "name": "top.u_tile.AAAA_BBB_C1",
+      "parent": "top.u_tile",
+      "module": "rs_pipe",
+      "cell": "npiNlModuleCell",
+      "owner_scope": "top"
+    },
+    {
+      "name": "top.u_tile.CTRL_RS_D0",
+      "parent": "top.u_tile",
+      "module": "rs_pipe",
+      "cell": "npiNlModuleCell",
+      "owner_scope": "top"
+    }
+  ],
+  "checks": [
+    {
+      "source": "top.ref_clk",
+      "instance": "top.u_tile.AAAA_BBB_C0",
+      "module": "rs_pipe",
+      "owner_scope": "top.u_tile.AAAA_BBB_C0",
+      "port": "top.u_tile.AAAA_BBB_C0.clk",
+      "direction": "npiNlInput",
+      "source_bits": [
+        "scalar"
+      ],
+      "target_bits": [
+        "0"
+      ],
+      "witnesses": [
+        {
+          "nodes": [
+            "n1",
+            "n2",
+            "n4",
+            "n5",
+            "n7",
+            "n9",
+            "n11",
+            "n13",
+            "n15",
+            "n17",
+            "n19",
+            "n21",
+            "n23",
+            "n25"
+          ],
+          "edge_indices": [
+            0,
+            2,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ]
+        }
+      ],
+      "status": "CONNECTED"
+    },
+    {
+      "source": "top.ref_clk",
+      "instance": "top.u_tile.AAAA_BBB_C1",
+      "module": "rs_pipe",
+      "owner_scope": "top",
+      "port": "top.u_tile.AAAA_BBB_C1.clk",
+      "direction": "npiNlInput",
+      "source_bits": [
+        "scalar"
+      ],
+      "target_bits": [
+        "0"
+      ],
+      "witnesses": [
+        {
+          "nodes": [
+            "n1",
+            "n2",
+            "n4",
+            "n5",
+            "n7",
+            "n9",
+            "n11",
+            "n13",
+            "n15",
+            "n17",
+            "n19",
+            "n21",
+            "n23",
+            "n26"
+          ],
+          "edge_indices": [
+            0,
+            2,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21,
+            24
+          ]
+        }
+      ],
+      "status": "CONNECTED"
+    },
+    {
+      "source": "top.ref_clk",
+      "instance": "top.u_tile.CTRL_RS_D0",
+      "module": "rs_pipe",
+      "owner_scope": "top",
+      "port": "top.u_tile.CTRL_RS_D0.clk",
+      "direction": "npiNlInput",
+      "source_bits": [
+        "scalar"
+      ],
+      "target_bits": [
+        "0"
+      ],
+      "witnesses": [
+        {
+          "nodes": [
+            "n1",
+            "n2",
+            "n4",
+            "n5",
+            "n6",
+            "n8",
+            "n10",
+            "n12",
+            "n14",
+            "n16",
+            "n18",
+            "n20",
+            "n22",
+            "n24"
+          ],
+          "edge_indices": [
+            0,
+            2,
+            3,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22
+          ]
+        }
+      ],
+      "status": "CONNECTED"
+    }
+  ],
+  "observed": [
+    {
+      "role": "observe",
+      "query": "top.u_tile.ref_clk",
+      "id": "n5",
+      "source_bit": "",
+      "reached": true
+    },
+    {
+      "role": "observe",
+      "query": "top.u_tile.clk_rs",
+      "id": "n23",
+      "source_bit": "",
+      "reached": true
+    },
+    {
+      "role": "observe",
+      "query": "top.u_tile.clk_aux",
+      "id": "n22",
+      "source_bit": "",
+      "reached": true
+    }
+  ],
+  "regions": [
+    {
+      "scope": "top",
+      "selected_parent": null,
+      "excluded_subtrees": [
+        "top.u_tile.AAAA_BBB_C0"
+      ]
+    },
+    {
+      "scope": "top.u_tile.AAAA_BBB_C0",
+      "selected_parent": "top",
+      "excluded_subtrees": []
+    }
+  ],
+  "stops": [
+    {
+      "reason": "STOP_SEQUENTIAL",
+      "id": "n33",
+      "direction": "load",
+      "detail": "npiNlFlipFlopCell"
+    },
+    {
+      "reason": "STOP_SEQUENTIAL",
+      "id": "n34",
+      "direction": "load",
+      "detail": "npiNlFlipFlopCell"
+    },
+    {
+      "reason": "STOP_SEQUENTIAL",
+      "id": "n35",
+      "direction": "load",
+      "detail": "npiNlFlipFlopCell"
+    }
+  ],
+  "errors": [],
+  "unresolved": [],
+  "paths_complete": true
+}

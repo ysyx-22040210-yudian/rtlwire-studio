@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "source": "top.u_tile.data_out",
+      "source_bit": "scalar",
+      "nodes": [
+        "n6",
+        "n2"
+      ],
+      "edge_indices": [
+        3
+      ],
+      "target_port": "top.u_tile.AAAA_BBB_C1.q",
+      "port_direction": "npiNlOutput",
+      "search_direction": "upstream",
+      "stop_reason": "PORT_CONNECTED"
+    },
+    {
+      "source": "top.u_tile.stage_0",
+      "source_bit": "scalar",
+      "nodes": [
+        "n4",
+        "n1"
+      ],
+      "edge_indices": [
+        1
+      ],
+      "target_port": "top.u_tile.AAAA_BBB_C0.q",
+      "port_direction": "npiNlOutput",
+      "search_direction": "upstream",
+      "stop_reason": "PORT_CONNECTED"
+    },
+    {
+      "source": "top.u_tile.stage_0",
+      "source_bit": "scalar",
+      "nodes": [
+        "n1",
+        "n3"
+      ],
+      "edge_indices": [
+        0
+      ],
+      "target_port": "top.u_tile.AAAA_BBB_C1.d",
+      "port_direction": "npiNlInput",
+      "search_direction": "downstream",
+      "stop_reason": "PORT_CONNECTED"
+    }
+  ],
+  "truncated": false,
+  "semantics": "One retained witness per reached port; upstream witnesses are ordered in actual signal flow; mixed witnesses are connectivity evidence."
+}

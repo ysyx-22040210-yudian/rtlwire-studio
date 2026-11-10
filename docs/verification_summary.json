@@ -1,0 +1,149 @@
+{
+  "version": "0.5.0",
+  "evidence_type": "Curated summary of recorded Linux development acceptance; not a new full EDA run.",
+  "platform": {
+    "os": "CentOS 7",
+    "python": "3.6.8",
+    "tk": "8.5",
+    "verdi": "O-2018.09-SP2"
+  },
+  "unit_tests": {
+    "total": 62,
+    "core": 10,
+    "architecture": 7,
+    "wave": 22,
+    "wave_groups": 23,
+    "publication_tree_rerun": {
+      "passed": true,
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "date": "2026-11-11",
+      "platform": "Windows (pure Python core)"
+    }
+  },
+  "fsdb_gui_acceptance": {
+    "passed": true,
+    "checks": [
+      {
+        "case": "two_independent_rpts_and_user_keywords",
+        "passed": true
+      },
+      {
+        "case": "ambiguous_keyword_is_rejected_in_dialog",
+        "passed": true
+      },
+      {
+        "case": "save_rpt_paths_and_keyword_mappings",
+        "passed": true
+      },
+      {
+        "case": "real_fsdb_three_groups_and_mixed_bus",
+        "passed": true
+      },
+      {
+        "case": "domain_switch_and_grouped_svg_export",
+        "passed": true
+      },
+      {
+        "case": "group_specific_failures_and_no_clamp_off_x",
+        "passed": true
+      },
+      {
+        "case": "duplicate_unassigned_and_unmatched_signals",
+        "passed": true
+      },
+      {
+        "case": "older_saved_results_display_without_rpt",
+        "passed": true
+      },
+      {
+        "case": "architecture_workspace_preserved",
+        "passed": true
+      }
+    ]
+  },
+  "ui_acceptance": {
+    "passed": true,
+    "checks": [
+      {
+        "case": "focus_canvas_and_escape_preserve_query",
+        "passed": true
+      },
+      {
+        "case": "actual_npi_dual_io_trace_and_nested_ownership_display",
+        "passed": true
+      },
+      {
+        "case": "default_1600x960_all_three_lanes_zoom_and_expand",
+        "passed": true
+      },
+      {
+        "case": "rounded_rpt_dialog_and_keyword_preview",
+        "passed": true
+      },
+      {
+        "case": "resize_1280x800_and_1680x1040",
+        "passed": true
+      },
+      {
+        "case": "environment_and_history_dialogs",
+        "passed": true
+      }
+    ]
+  },
+  "package_acceptance": {
+    "passed": true,
+    "source_files_verified": 59,
+    "packaged_unit_tests": 62,
+    "launcher_started": true,
+    "ordinary_user": {
+      "uid": 99,
+      "fsdb_mode": "0444",
+      "rpt_mode": "0444",
+      "audit_passed": true,
+      "summary": {
+        "status": "PASS",
+        "domains": 2,
+        "outputs": 14,
+        "cycles": 2,
+        "complete_cycles": 2,
+        "output_cycle_checks": 14,
+        "delta_warnings": 1,
+        "pass": 14,
+        "fail": 0,
+        "unknown": 0
+      },
+      "all_rpt_inputs_unchanged": true
+    }
+  },
+  "saved_examples": {
+    "wave_groups_passing": {
+      "status": "PASS",
+      "domains": 2,
+      "outputs": 14,
+      "cycles": 2,
+      "complete_cycles": 2,
+      "output_cycle_checks": 14,
+      "delta_warnings": 1,
+      "pass": 14,
+      "fail": 0,
+      "unknown": 0
+    },
+    "wave_groups_faults": {
+      "status": "FAIL",
+      "domains": 2,
+      "outputs": 14,
+      "cycles": 2,
+      "complete_cycles": 2,
+      "output_cycle_checks": 14,
+      "delta_warnings": 0,
+      "pass": 8,
+      "fail": 6,
+      "unknown": 0
+    }
+  },
+  "limits": [
+    "FSDB coverage includes only recorded direct output ports with direction metadata.",
+    "No claim of full-chip performance or arbitrary HDL primitive support.",
+    "Saved example records are curated and exclude original development host access logs."
+  ]
+}

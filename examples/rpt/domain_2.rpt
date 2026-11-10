@@ -1,0 +1,6 @@
+# Independent RPT fixture, user-selected keywords
+BETA_FORCE_HIGH { one_out，one_bus, mixed_bus[3] }
+BETA_FORCE_LOW {
+ zero_out, zero_bus[3:0], mixed_bus[2]
+}
+BETA_TRANSPARENT { free_out, free_bus, mixed_bus[1:0] }

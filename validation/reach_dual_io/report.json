@@ -1,0 +1,198 @@
+{
+  "mode": "reach",
+  "complete": true,
+  "candidate_count": 3,
+  "completeness_scope": "Within traversal_boundary and traversal policy; stops at sequential cells. Not functional equivalence.",
+  "candidates": [
+    {
+      "name": "top.u_tile.AAAA_BBB_C0",
+      "parent": "top.u_tile",
+      "module": "rs_pipe",
+      "cell": "npiNlModuleCell",
+      "owner_scope": "top.u_tile"
+    },
+    {
+      "name": "top.u_tile.AAAA_BBB_C1",
+      "parent": "top.u_tile",
+      "module": "rs_pipe",
+      "cell": "npiNlModuleCell",
+      "owner_scope": "top.u_tile.AAAA_BBB_C1"
+    },
+    {
+      "name": "top.u_tile.CTRL_RS_D0",
+      "parent": "top.u_tile",
+      "module": "rs_pipe",
+      "cell": "npiNlModuleCell",
+      "owner_scope": "top.u_tile"
+    }
+  ],
+  "checks": [
+    {
+      "source": "top.u_tile.data_out",
+      "instance": "top.u_tile.AAAA_BBB_C0",
+      "module": "rs_pipe",
+      "owner_scope": "top.u_tile",
+      "port": "",
+      "direction": "",
+      "source_bits": [],
+      "target_bits": [],
+      "witnesses": [],
+      "status": "NOT_CONNECTED"
+    },
+    {
+      "source": "top.u_tile.data_out",
+      "instance": "top.u_tile.AAAA_BBB_C1",
+      "module": "rs_pipe",
+      "owner_scope": "top.u_tile.AAAA_BBB_C1",
+      "port": "top.u_tile.AAAA_BBB_C1.q",
+      "direction": "npiNlOutput",
+      "source_bits": [
+        "scalar"
+      ],
+      "target_bits": [
+        "0"
+      ],
+      "witnesses": [
+        {
+          "nodes": [
+            "n2",
+            "n6"
+          ],
+          "edge_indices": [
+            3
+          ]
+        }
+      ],
+      "status": "CONNECTED"
+    },
+    {
+      "source": "top.u_tile.data_out",
+      "instance": "top.u_tile.CTRL_RS_D0",
+      "module": "rs_pipe",
+      "owner_scope": "top.u_tile",
+      "port": "",
+      "direction": "",
+      "source_bits": [],
+      "target_bits": [],
+      "witnesses": [],
+      "status": "NOT_CONNECTED"
+    },
+    {
+      "source": "top.u_tile.stage_0",
+      "instance": "top.u_tile.AAAA_BBB_C0",
+      "module": "rs_pipe",
+      "owner_scope": "top.u_tile",
+      "port": "top.u_tile.AAAA_BBB_C0.q",
+      "direction": "npiNlOutput",
+      "source_bits": [
+        "scalar"
+      ],
+      "target_bits": [
+        "0"
+      ],
+      "witnesses": [
+        {
+          "nodes": [
+            "n1",
+            "n4"
+          ],
+          "edge_indices": [
+            1
+          ]
+        }
+      ],
+      "status": "CONNECTED"
+    },
+    {
+      "source": "top.u_tile.stage_0",
+      "instance": "top.u_tile.AAAA_BBB_C1",
+      "module": "rs_pipe",
+      "owner_scope": "top.u_tile.AAAA_BBB_C1",
+      "port": "top.u_tile.AAAA_BBB_C1.d",
+      "direction": "npiNlInput",
+      "source_bits": [
+        "scalar"
+      ],
+      "target_bits": [
+        "0"
+      ],
+      "witnesses": [
+        {
+          "nodes": [
+            "n1",
+            "n3"
+          ],
+          "edge_indices": [
+            0
+          ]
+        }
+      ],
+      "status": "CONNECTED"
+    },
+    {
+      "source": "top.u_tile.stage_0",
+      "instance": "top.u_tile.CTRL_RS_D0",
+      "module": "rs_pipe",
+      "owner_scope": "top.u_tile",
+      "port": "",
+      "direction": "",
+      "source_bits": [],
+      "target_bits": [],
+      "witnesses": [],
+      "status": "NOT_CONNECTED"
+    }
+  ],
+  "observed": [
+    {
+      "role": "observe",
+      "query": "top.data_out",
+      "id": "n13",
+      "source_bit": "",
+      "reached": true
+    }
+  ],
+  "regions": [
+    {
+      "scope": "top",
+      "selected_parent": null,
+      "excluded_subtrees": [
+        "top.u_tile"
+      ]
+    },
+    {
+      "scope": "top.u_tile",
+      "selected_parent": "top",
+      "excluded_subtrees": [
+        "top.u_tile.AAAA_BBB_C1"
+      ]
+    },
+    {
+      "scope": "top.u_tile.AAAA_BBB_C1",
+      "selected_parent": "top.u_tile",
+      "excluded_subtrees": []
+    }
+  ],
+  "stops": [
+    {
+      "reason": "STOP_SEQUENTIAL",
+      "id": "n15",
+      "direction": "load",
+      "detail": "npiNlFlipFlopCell"
+    },
+    {
+      "reason": "STOP_SEQUENTIAL",
+      "id": "n16",
+      "direction": "driver",
+      "detail": "npiNlFlipFlopCell"
+    },
+    {
+      "reason": "STOP_SEQUENTIAL",
+      "id": "n18",
+      "direction": "driver",
+      "detail": "npiNlFlipFlopCell"
+    }
+  ],
+  "errors": [],
+  "unresolved": [],
+  "paths_complete": true
+}

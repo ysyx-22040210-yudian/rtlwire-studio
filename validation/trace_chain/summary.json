@@ -1,0 +1,12 @@
+{
+  "mode": "trace",
+  "complete": true,
+  "candidates": 5,
+  "connected_checks": 12,
+  "raw_nodes": 51,
+  "raw_edges": 51,
+  "displayed_nodes": 18,
+  "paths": 4,
+  "paths_truncated": false,
+  "report": "/path/to/local/results"
+}

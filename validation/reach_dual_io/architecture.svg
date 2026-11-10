@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1398" height="649" viewBox="0 0 1398 649">
+<title>RTLWire | Design architecture</title>
+<rect width="100%" height="100%" fill="#f8f7f2"/>
+<g font-family="Microsoft YaHei UI,WenQuanYi Micro Hei,DejaVu Sans,sans-serif">
+<g data-object=""><title></title>
+<text x="48" y="29" dy="0.35em" font-size="12" text-anchor="start" fill="#b56346" font-weight="600">DESIGN  /  ARCHITECTURE</text>
+</g>
+<g data-object=""><title></title>
+<text x="48" y="53" dy="0.35em" font-size="18" text-anchor="start" fill="#292823" font-weight="600">层次包含与端口连接</text>
+</g>
+<g data-object=""><title></title>
+<text x="1350" y="52" dy="0.35em" font-size="11" text-anchor="end" fill="#827e72" font-weight="400">5 个实例  /  7 条连接</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<rect x="48" y="90" width="1302" height="511" rx="18" fill="#efede5" stroke="#c89982" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_tile"><title>module:top.u_tile</title>
+<rect x="128" y="198.0" width="1142" height="341" rx="18" fill="#f6f4ee" stroke="#c89982" stroke-width="1.2"/>
+</g>
+<g data-object=""><title></title>
+<rect x="208" y="319.5" width="258" height="154" rx="16" fill="#e8e4da" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="208" y="316.5" width="258" height="154" rx="16" fill="#f0ede5" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C0"><title>module:top.u_tile.AAAA_BBB_C0</title>
+<rect x="208" y="314.5" width="258" height="154" rx="14" fill="#ffffff" stroke="#c9d4cc" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C0"><title>module:top.u_tile.AAAA_BBB_C0</title>
+<rect x="217" y="323.5" width="240" height="49" rx="9" fill="#f4f7f3" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="570" y="311.0" width="258" height="171" rx="16" fill="#e8e4da" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="570" y="308.0" width="258" height="171" rx="16" fill="#f0ede5" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C1"><title>module:top.u_tile.AAAA_BBB_C1</title>
+<rect x="570" y="306.0" width="258" height="171" rx="14" fill="#ffffff" stroke="#c89982" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C1"><title>module:top.u_tile.AAAA_BBB_C1</title>
+<rect x="579" y="315.0" width="240" height="49" rx="9" fill="#f4f7f3" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="932" y="319.5" width="258" height="154" rx="16" fill="#e8e4da" stroke="none" stroke-width="1"/>
+</g>
+<g data-object=""><title></title>
+<rect x="932" y="316.5" width="258" height="154" rx="16" fill="#f0ede5" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_tile.CTRL_RS_D0"><title>module:top.u_tile.CTRL_RS_D0</title>
+<rect x="932" y="314.5" width="258" height="154" rx="14" fill="#ffffff" stroke="#c9d4cc" stroke-width="1.2"/>
+</g>
+<g data-object="module:top.u_tile.CTRL_RS_D0"><title>module:top.u_tile.CTRL_RS_D0</title>
+<rect x="941" y="323.5" width="240" height="49" rx="9" fill="#f4f7f3" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="wire:1"><title>wire:1</title>
+<polyline points="466,408.5 480.0,408.5 482.44444444444446,408.7222222222223 484.4444444444445,409.38888888888897 486.0,410.5 487.1111111111112,412.05555555555554 487.77777777777777,414.05555555555554 488.0,416.5 488.0,501.0 487.77777777777777,503.44444444444446 487.11111111111114,505.44444444444446 486.0,507.0 484.44444444444446,508.1111111111111 482.44444444444446,508.7777777777778 480.0,509.0 158,509.0" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:1"><title>wire:1</title>
+<polyline points="466,408.5 480.0,408.5 482.44444444444446,408.7222222222223 484.4444444444445,409.38888888888897 486.0,410.5 487.1111111111112,412.05555555555554 487.77777777777777,414.05555555555554 488.0,416.5 488.0,501.0 487.77777777777777,503.44444444444446 487.11111111111114,505.44444444444446 486.0,507.0 484.44444444444446,508.1111111111111 482.44444444444446,508.7777777777778 480.0,509.0 158,509.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="158,509.0 165.0,512.0 165.0,506.0" fill="#73877e"/>
+</g>
+<g data-object="wire:2"><title>wire:2</title>
+<polyline points="595,400.0 638.5,400.0 640.9444444444446,400.22222222222223 642.9444444444446,400.8888888888889 644.5,402.0 645.6111111111111,403.55555555555554 646.2777777777778,405.55555555555554 646.5,408.0 646.5,436.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="646.5,436.0 649.5,429.0 643.5,429.0" fill="#73877e"/>
+</g>
+<g data-object="wire:3"><title>wire:3</title>
+<polyline points="828,400.0 842.0,400.0 844.4444444444445,399.7777777777778 846.4444444444446,399.11111111111114 848.0,398.0 849.1111111111111,396.44444444444446 849.7777777777778,394.44444444444446 850.0,392.0 850.0,300.0 850.2222222222223,297.55555555555554 850.888888888889,295.55555555555566 852.0,294.0 853.5555555555557,292.8888888888889 855.5555555555555,292.22222222222223 858.0,292.0 1270,292.0" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:3"><title>wire:3</title>
+<polyline points="828,400.0 842.0,400.0 844.4444444444445,399.7777777777778 846.4444444444446,399.11111111111114 848.0,398.0 849.1111111111111,396.44444444444446 849.7777777777778,394.44444444444446 850.0,392.0 850.0,300.0 850.2222222222223,297.55555555555554 850.888888888889,295.55555555555566 852.0,294.0 853.5555555555557,292.8888888888889 855.5555555555555,292.22222222222223 858.0,292.0 1270,292.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1270,292.0 1263.0,289.0 1263.0,295.0" fill="#73877e"/>
+</g>
+<g data-object="wire:4"><title>wire:4</title>
+<polyline points="1270,292.0 1284.0,292.0 1286.4444444444446,291.7777777777778 1288.4444444444448,291.11111111111114 1290.0,290.0 1291.111111111111,288.44444444444446 1291.7777777777778,286.44444444444446 1292.0,284.0 1292.0,192.0 1292.2222222222224,189.55555555555557 1292.888888888889,187.5555555555556 1294.0,186.0 1295.5555555555557,184.88888888888889 1297.5555555555557,184.22222222222223 1300.0,184.0 1350,184" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:4"><title>wire:4</title>
+<polyline points="1270,292.0 1284.0,292.0 1286.4444444444446,291.7777777777778 1288.4444444444448,291.11111111111114 1290.0,290.0 1291.111111111111,288.44444444444446 1291.7777777777778,286.44444444444446 1292.0,284.0 1292.0,192.0 1292.2222222222224,189.55555555555557 1292.888888888889,187.5555555555556 1294.0,186.0 1295.5555555555557,184.88888888888889 1297.5555555555557,184.22222222222223 1300.0,184.0 1350,184" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="1350,184 1343.0,181.0 1343.0,187.0" fill="#73877e"/>
+</g>
+<g data-object="wire:5"><title>wire:5</title>
+<polyline points="158,509.0 168.0,509.0 170.44444444444446,508.7777777777779 172.44444444444446,508.11111111111114 174.0,507.0 175.11111111111111,505.44444444444446 175.77777777777777,503.44444444444446 176.0,501.0 176.0,491.5 176.22222222222226,489.05555555555566 176.8888888888889,487.0555555555556 178.0,485.5 179.55555555555554,484.3888888888889 181.55555555555557,483.72222222222223 184.0,483.5 540.0,483.5 542.4444444444445,483.27777777777777 544.4444444444446,482.61111111111114 546.0,481.5 547.1111111111111,479.94444444444446 547.7777777777778,477.94444444444446 548.0,475.5 548.0,408.0 548.2222222222223,405.55555555555554 548.8888888888889,403.55555555555566 550.0,402.0 551.5555555555555,400.8888888888889 553.5555555555555,400.2222222222223 556.0,400.0 570,400.0" fill="none" stroke="#f8f7f2" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-object="wire:5"><title>wire:5</title>
+<polyline points="158,509.0 168.0,509.0 170.44444444444446,508.7777777777779 172.44444444444446,508.11111111111114 174.0,507.0 175.11111111111111,505.44444444444446 175.77777777777777,503.44444444444446 176.0,501.0 176.0,491.5 176.22222222222226,489.05555555555566 176.8888888888889,487.0555555555556 178.0,485.5 179.55555555555554,484.3888888888889 181.55555555555557,483.72222222222223 184.0,483.5 540.0,483.5 542.4444444444445,483.27777777777777 544.4444444444446,482.61111111111114 546.0,481.5 547.1111111111111,479.94444444444446 547.7777777777778,477.94444444444446 548.0,475.5 548.0,408.0 548.2222222222223,405.55555555555554 548.8888888888889,403.55555555555566 550.0,402.0 551.5555555555555,400.8888888888889 553.5555555555555,400.2222222222223 556.0,400.0 570,400.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="570,400.0 563.0,397.0 563.0,403.0" fill="#73877e"/>
+</g>
+<g data-object="wire:6"><title>wire:6</title>
+<polyline points="337.0,427.5 337.0,416.5 337.22222222222223,414.0555555555556 337.8888888888889,412.05555555555566 339.0,410.5 340.55555555555554,409.3888888888889 342.55555555555554,408.72222222222223 345.0,408.5 441,408.5" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="441,408.5 434.0,405.5 434.0,411.5" fill="#73877e"/>
+</g>
+<g data-object="wire:7"><title>wire:7</title>
+<polyline points="751.5,436.0 751.5,408.0 751.7222222222223,405.55555555555554 752.3888888888889,403.55555555555566 753.5,402.0 755.0555555555555,400.8888888888889 757.0555555555557,400.2222222222223 759.5,400.0 803,400.0" fill="none" stroke="#73877e" stroke-width="1.8" stroke-linejoin="round"/>
+<polygon points="803,400.0 796.0,397.0 796.0,403.0" fill="#73877e"/>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<text x="67" y="116" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">top</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<text x="67" y="139" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  top</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<rect x="1265" y="104" width="68" height="23" rx="10" fill="#ead7c7" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<text x="1299" y="115" dy="0.35em" font-size="10" text-anchor="middle" fill="#b56346" font-weight="600">检查层次</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<text x="1330" y="140" dy="0.35em" font-size="10" text-anchor="end" fill="#827e72" font-weight="400">1 个同级实例</text>
+</g>
+<g data-object="module:top"><title>module:top</title>
+<polyline points="64,155 1334,155" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_tile"><title>module:top.u_tile</title>
+<text x="147" y="224.0" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">top.u_tile</text>
+</g>
+<g data-object="module:top.u_tile"><title>module:top.u_tile</title>
+<text x="147" y="247.0" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  tile</text>
+</g>
+<g data-object="module:top.u_tile"><title>module:top.u_tile</title>
+<rect x="1185" y="212.0" width="68" height="23" rx="10" fill="#ead7c7" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_tile"><title>module:top.u_tile</title>
+<text x="1219" y="223.0" dy="0.35em" font-size="10" text-anchor="middle" fill="#b56346" font-weight="600">检查层次</text>
+</g>
+<g data-object="module:top.u_tile"><title>module:top.u_tile</title>
+<text x="1250" y="248.0" dy="0.35em" font-size="10" text-anchor="end" fill="#827e72" font-weight="400">3 个同级实例</text>
+</g>
+<g data-object="module:top.u_tile"><title>module:top.u_tile</title>
+<polyline points="144,263.0 1254,263.0" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C0"><title>module:top.u_tile.AAAA_BBB_C0</title>
+<text x="227" y="340.5" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">AAAA_BBB_C0</text>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C0"><title>module:top.u_tile.AAAA_BBB_C0</title>
+<text x="227" y="363.5" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  rs_pipe</text>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C0"><title>module:top.u_tile.AAAA_BBB_C0</title>
+<text x="227" y="454.5" dy="0.35em" font-size="9" text-anchor="start" fill="#827e72" font-weight="400">归属  top.u_tile</text>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C0"><title>module:top.u_tile.AAAA_BBB_C0</title>
+<polyline points="224,379.5 450,379.5" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C1"><title>module:top.u_tile.AAAA_BBB_C1</title>
+<text x="589" y="332.0" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">AAAA_BBB_C1</text>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C1"><title>module:top.u_tile.AAAA_BBB_C1</title>
+<text x="589" y="355.0" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  rs_pipe</text>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C1"><title>module:top.u_tile.AAAA_BBB_C1</title>
+<rect x="743" y="320.0" width="68" height="23" rx="10" fill="#ead7c7" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C1"><title>module:top.u_tile.AAAA_BBB_C1</title>
+<text x="777" y="331.0" dy="0.35em" font-size="10" text-anchor="middle" fill="#b56346" font-weight="600">检查层次</text>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C1"><title>module:top.u_tile.AAAA_BBB_C1</title>
+<text x="589" y="463.0" dy="0.35em" font-size="9" text-anchor="start" fill="#827e72" font-weight="400">归属  top.u_tile.AAAA_BBB_C1</text>
+</g>
+<g data-object="module:top.u_tile.AAAA_BBB_C1"><title>module:top.u_tile.AAAA_BBB_C1</title>
+<polyline points="586,371.0 812,371.0" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="module:top.u_tile.CTRL_RS_D0"><title>module:top.u_tile.CTRL_RS_D0</title>
+<text x="951" y="340.5" dy="0.35em" font-size="15" text-anchor="start" fill="#292823" font-weight="600">CTRL_RS_D0</text>
+</g>
+<g data-object="module:top.u_tile.CTRL_RS_D0"><title>module:top.u_tile.CTRL_RS_D0</title>
+<text x="951" y="363.5" dy="0.35em" font-size="11" text-anchor="start" fill="#827e72" font-weight="400">module  rs_pipe</text>
+</g>
+<g data-object="module:top.u_tile.CTRL_RS_D0"><title>module:top.u_tile.CTRL_RS_D0</title>
+<text x="951" y="454.5" dy="0.35em" font-size="9" text-anchor="start" fill="#827e72" font-weight="400">归属  top.u_tile</text>
+</g>
+<g data-object="module:top.u_tile.CTRL_RS_D0"><title>module:top.u_tile.CTRL_RS_D0</title>
+<polyline points="948,379.5 1174,379.5" fill="none" stroke="#dfdbcf" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-object="signal:top.u_tile.stage_0"><title>signal:top.u_tile.stage_0</title>
+<ellipse cx="158.0" cy="509.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#b56346" stroke-width="1.8"/>
+</g>
+<g data-object="signal:top.u_tile.stage_0"><title>signal:top.u_tile.stage_0</title>
+<ellipse cx="158.0" cy="509.0" rx="2.0" ry="2.0" fill="#b56346" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="signal:top.u_tile.stage_0"><title>signal:top.u_tile.stage_0</title>
+<rect x="166" y="499.0" width="55" height="20" rx="6" fill="#f8eee6" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="signal:top.u_tile.stage_0"><title>signal:top.u_tile.stage_0</title>
+<text x="170" y="509.0" dy="0.35em" font-size="11" text-anchor="start" fill="#b56346" font-weight="600">stage_0</text>
+</g>
+<g data-object="port:top.u_tile.data_out"><title>port:top.u_tile.data_out</title>
+<ellipse cx="1270.0" cy="292.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#b56346" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_tile.data_out"><title>port:top.u_tile.data_out</title>
+<ellipse cx="1270.0" cy="292.0" rx="2.0" ry="2.0" fill="#b56346" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_tile.data_out"><title>port:top.u_tile.data_out</title>
+<rect x="1200" y="282.0" width="62" height="20" rx="6" fill="#f8eee6" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_tile.data_out"><title>port:top.u_tile.data_out</title>
+<text x="1258" y="292.0" dy="0.35em" font-size="11" text-anchor="end" fill="#b56346" font-weight="600">data_out</text>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C1.d"><title>port:top.u_tile.AAAA_BBB_C1.d</title>
+<ellipse cx="570.0" cy="400.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C1.d"><title>port:top.u_tile.AAAA_BBB_C1.d</title>
+<ellipse cx="570.0" cy="400.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C1.d"><title>port:top.u_tile.AAAA_BBB_C1.d</title>
+<rect x="578" y="390.0" width="13" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C1.d"><title>port:top.u_tile.AAAA_BBB_C1.d</title>
+<text x="582" y="400.0" dy="0.35em" font-size="11" text-anchor="start" fill="#38796c" font-weight="400">d</text>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C0.q"><title>port:top.u_tile.AAAA_BBB_C0.q</title>
+<ellipse cx="466.0" cy="408.5" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C0.q"><title>port:top.u_tile.AAAA_BBB_C0.q</title>
+<ellipse cx="466.0" cy="408.5" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C0.q"><title>port:top.u_tile.AAAA_BBB_C0.q</title>
+<rect x="445" y="398.5" width="13" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C0.q"><title>port:top.u_tile.AAAA_BBB_C0.q</title>
+<text x="454" y="408.5" dy="0.35em" font-size="11" text-anchor="end" fill="#38796c" font-weight="400">q</text>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C1.q"><title>port:top.u_tile.AAAA_BBB_C1.q</title>
+<ellipse cx="828.0" cy="400.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#38796c" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C1.q"><title>port:top.u_tile.AAAA_BBB_C1.q</title>
+<ellipse cx="828.0" cy="400.0" rx="2.0" ry="2.0" fill="#38796c" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C1.q"><title>port:top.u_tile.AAAA_BBB_C1.q</title>
+<rect x="807" y="390.0" width="13" height="20" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.u_tile.AAAA_BBB_C1.q"><title>port:top.u_tile.AAAA_BBB_C1.q</title>
+<text x="816" y="400.0" dy="0.35em" font-size="11" text-anchor="end" fill="#38796c" font-weight="400">q</text>
+</g>
+<g data-object="port:top.data_out"><title>port:top.data_out</title>
+<ellipse cx="1350.0" cy="184.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#b56346" stroke-width="1.8"/>
+</g>
+<g data-object="port:top.data_out"><title>port:top.data_out</title>
+<ellipse cx="1350.0" cy="184.0" rx="2.0" ry="2.0" fill="#b56346" stroke="none" stroke-width="0"/>
+</g>
+<g data-object="port:top.data_out"><title>port:top.data_out</title>
+<rect x="1280" y="174" width="62" height="20" rx="6" fill="#f8eee6" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="port:top.data_out"><title>port:top.data_out</title>
+<text x="1338" y="184" dy="0.35em" font-size="11" text-anchor="end" fill="#b56346" font-weight="400">data_out</text>
+</g>
+<g data-object="stop:top.u_tile.AAAA_BBB_C1.rs_pipe:Always0#Always0:21:27:Reg.IH_d"><title>stop:top.u_tile.AAAA_BBB_C1.rs_pipe:Always0#Always0:21:27:Reg.IH_d</title>
+<rect x="594.0" y="437.0" width="105.0" height="21" rx="8" fill="#f5ecd9" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="stop:top.u_tile.AAAA_BBB_C1.rs_pipe:Always0#Always0:21:27:Reg.IH_d"><title>stop:top.u_tile.AAAA_BBB_C1.rs_pipe:Always0#Always0:21:27:Reg.IH_d</title>
+<text x="646.5" y="447.0" dy="0.35em" font-size="10" text-anchor="middle" fill="#a27935" font-weight="400">输入侧停止</text>
+</g>
+<g data-object="stop:top.u_tile.AAAA_BBB_C0.rs_pipe:Always0#Always0:21:27:Reg.ROH_q"><title>stop:top.u_tile.AAAA_BBB_C0.rs_pipe:Always0#Always0:21:27:Reg.ROH_q</title>
+<rect x="226.0" y="428.5" width="222" height="21" rx="8" fill="#f5ecd9" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="stop:top.u_tile.AAAA_BBB_C0.rs_pipe:Always0#Always0:21:27:Reg.ROH_q"><title>stop:top.u_tile.AAAA_BBB_C0.rs_pipe:Always0#Always0:21:27:Reg.ROH_q</title>
+<text x="337.0" y="438.5" dy="0.35em" font-size="10" text-anchor="middle" fill="#a27935" font-weight="400">时序边界 · 停止</text>
+</g>
+<g data-object="stop:top.u_tile.AAAA_BBB_C1.rs_pipe:Always0#Always0:21:27:Reg.ROH_q"><title>stop:top.u_tile.AAAA_BBB_C1.rs_pipe:Always0#Always0:21:27:Reg.ROH_q</title>
+<rect x="699.0" y="437.0" width="105.0" height="21" rx="8" fill="#f5ecd9" stroke="none" stroke-width="1"/>
+</g>
+<g data-object="stop:top.u_tile.AAAA_BBB_C1.rs_pipe:Always0#Always0:21:27:Reg.ROH_q"><title>stop:top.u_tile.AAAA_BBB_C1.rs_pipe:Always0#Always0:21:27:Reg.ROH_q</title>
+<text x="751.5" y="447.0" dy="0.35em" font-size="10" text-anchor="middle" fill="#a27935" font-weight="400">输出侧停止</text>
+</g>
+</g></svg>

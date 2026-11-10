@@ -1,0 +1,12 @@
+{
+  "mode": "reach",
+  "complete": true,
+  "candidates": 3,
+  "connected_checks": 3,
+  "raw_nodes": 18,
+  "raw_edges": 16,
+  "displayed_nodes": 11,
+  "paths": 3,
+  "paths_truncated": false,
+  "report": "/path/to/local/results"
+}

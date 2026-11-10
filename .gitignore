@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.log
+/tmp/
+/runs/
+/work/
+/dist/
+node_modules/
+/docs/presentations/rendered/
+/docs/presentations/.lo-profile/

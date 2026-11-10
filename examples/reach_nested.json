@@ -1,0 +1,35 @@
+{
+  "design": {
+    "input_kind": "elab",
+    "elab_path": "/path/to/compiled/design.elab++"
+  },
+  "query": {
+    "mode": "reach",
+    "check_scopes": [
+      "top",
+      "top.u_tile.AAAA_BBB_C0"
+    ],
+    "traversal_boundary": "top",
+    "source": {
+      "scope": "top",
+      "signal": "ref_clk"
+    },
+    "target_modules": [
+      "rs_pipe"
+    ],
+    "observe_signals": [
+      {
+        "scope": "top.u_tile",
+        "names": [
+          "ref_clk",
+          "clk_rs",
+          "clk_aux"
+        ]
+      }
+    ]
+  },
+  "policy": {
+    "traversal": "wire_only",
+    "timeout_seconds": 120
+  }
+}
